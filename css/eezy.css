@@ -1,6 +1,4 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/*Font Definition*/
 @font-face
 {
 	font-family: UbuntuMedium;
@@ -18,6 +16,8 @@
 	font-family: UbuntuBold;
 	src: url(../fonts/Ubuntu-B.ttf);
 }
+
+/* Padding below the footer and lighter body text */
 
 body {
 	margin-top: 75px;
@@ -270,4 +270,35 @@ body {
 	margin-top: 63px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
+}
+
+/* Carousel Target Like a Laser*/
+.indicator-target {
+	
+	position: absolute;
+	top: 63px;
+	left: 50%;
+	z-index: 15;
+	 margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.indicator-target .active {
+	width:auto;
+    height: 30px;
+    cursor: pointer;
+    text-align:center;
+     font-family: UbuntuBold;
+}
+
+.indicator-target li {
+	width:auto;
+   	height: 30px;
+    cursor: pointer;
+    text-align:center;
+    text-indent: 0px;
+    padding: 5px;
+    
+    font-size: 12px;
 }
