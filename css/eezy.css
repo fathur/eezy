@@ -59,7 +59,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 580px;
+  
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -68,8 +68,8 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 580px;
-  background-color: #777;
+  
+  /*background-color: #777;*/
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -100,6 +100,85 @@ body {
 .ez-carousel-green {
 	background-color: rgba(28,168,195,0.7);
 	padding: 10px 60px;
+}
+
+#myCarousel {
+	height: 580px;
+}
+
+#myCarousel .item {
+	background-color: #e3e3e3;
+	height: 580px;
+}
+
+#myCarousel2 {
+	height: 1060px;
+}
+
+#myCarousel2 .item {
+	background-color: #42464b;
+	color: #FFF;
+	height: 1060px;
+}
+
+.carousel-control-2 {
+	margin: 530px 0 0 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+.carousel-control-2.left {
+	left: 0;
+	right: auto;
+}
+
+.carousel-control-3 {
+	margin: 290px 0 0 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+.carousel-control-2.left > img,
+.carousel-control-3.left > img {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.carousel-control-2.right,
+.carousel-control-3.right {
+	right: 0;
+	left: auto;
+	
+}
+
+#myCarousel3 {
+	height: 580px;
+}
+
+#myCarousel3 .item {
+	background-color: #e3e3e3;
+	height: 580px;
 }
 
 /* MARKETING CONTENT
@@ -361,77 +440,11 @@ body {
 	border-radius: 5px 5px 5px 5px;
 }
 
-/* Carousel Target Like a Laser*/
-.carousel-target {
-	height: 1065px;
-}
 
-.carousel-target .item {
-	height: 1065px;
-}
 
-.indicator-target {
-	
-	position: absolute;
-	top: 63px;
-	left: 50%;
-	z-index: 15;
-	 margin-left: -30%;
-  text-align: center;
-  list-style: none;
-}
 
-.indicator-target .active {
-	width:auto;
-    height: 30px;
-    cursor: pointer;
-    text-align:center;
-     font-family: UbuntuBold;
-}
 
-.indicator-target li {
-	width:auto;
-   	height: 30px;
-    cursor: pointer;
-    text-align:center;
-    text-indent: 0px;
-    padding: 5px;
-    font-size: 12px;
-}
 
-.indicator-target li:FIRST-CHILD {
-	margin-right: 50px;
-}
-
-.indicator-target li:LAST-CHILD {
-	margin-left: 50px;
-}
-
-.indicator-target li:not(:first-child):not(:last-child) {
-	margin-left: 50px;margin-right: 50px;
-}
-
-.carousel-control-target {
-	background-color: #d0d1d2;
-	position: absolute;
-	top: 47.8%;
-	bottom: 47.8%;
-	left: 0;
-	width: 44px;
-	font-size: 20px;
-	color: #FFF;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-	filter: alpha(opacity=100);
-	opacity: 1;
-	
-	-webkit-border-radius: 22px 22px 22px 22px;
-	border-radius: 22px 22px 22px 22px;
-}
-
-.carousel-control-target.left {
-	
-}
 
 .ez-part-four > div {
 	height: 90px;
@@ -460,4 +473,15 @@ body {
 	color: #36c9e5;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+.logo-s3 {
+	text-align: right;
+	margin-right: 0px;
+}
+.logo-s3-txt {
+	color: #1ca8c3;
+	font-size: 24px;
+	text-align: left;
+	margin-top: 30px;
 }
