@@ -21,12 +21,14 @@
 
 body {
 	margin-top: 75px;
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
 	color: #5a5a5a;
 	font-family: Ubuntu;
 }
 
-
+.arrow-down {
+	margin-top: -45px;	
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -213,19 +215,22 @@ body {
 	text-align: justify;
 }
 
-.ez-justify:nth-child(odd) {
-	padding-left: 90px;
-	padding-right: 20px;
-}
 
-.ez-justify:nth-child(even) {
-	padding-right: 90px;
-	padding-left: 20px;
+@media (min-width: 1200px) {
+	.ez-justify:nth-child(odd) {
+		padding-left: 90px;
+		padding-right: 20px;
+	}
+	
+	.ez-justify:nth-child(even) {
+		padding-right: 90px;
+		padding-left: 20px;
+	}
 }
 
 .ez-content {
-	margin-top: 63px;
-	margin-bottom: 63px;
+	margin-top: 35px;
+	/* margin-bottom: 50px;*/
 }
 
 .ez-title-content {
@@ -233,7 +238,7 @@ body {
 }
 
 .ez-content h1{
-	font-size: 48px;
+	font-size: 40px;
 	font-family: UbuntuMedium;
 	padding-left: 90px;
 	padding-right: 90px;
@@ -246,6 +251,13 @@ body {
 	padding-right: 90px;
 }
 
+.ez-content h3 {
+	font-family: UbuntuBold;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 40px;
+}
+
 .ez-content p {
 	font-size: 16px;
 	line-height: 1.7;
@@ -256,14 +268,81 @@ body {
 	font-family: UbuntuBold;
 }
 
+/* Footer Style Begin */
+.ez-footer {
+	margin-top: -10px;
+	
+}
+
 .ez-footer p {
-	margin-top: 35px;
+	margin-top: 15px;
+	font-family: Ubuntu;
+	font-size: 16px;
+}
+
+.ez-footer img {
+	
+}
+
+.ez-footer > div {
+	margin-bottom: 40px;
+}
+
+.ez-part-five {
+	margin: 0 0 100px 0;	
+}
+
+.ez-five {
+	margin: 90px 0 0 0;
+}
+
+.footer-line {
+	background-color: #1ca8c3;
+	height: 1px;
+	-webkit-box-shadow: 0 1px 0 0px #e1f6fb;
+	box-shadow: 0 1px 0 0px #e1f6fb;
+	
+} 
+
+.footer-img-latar {
+	
+	width: 68px;
+	margin: -45px auto 0 auto;
+	background-color: #E3E3E3;
+}/* Footer Style End */
+
+.ez-mitra {
+	margin-top: 75px;
+	margin-bottom: 120px;	
 }
 
 .ez-mitra div.text-center {
 	height: 75px;
 	padding-top: auto;
 	padding-bottom: auto;
+}
+
+.ez-numbering .number {
+	font-size: 30px;
+	font-family: UbuntuBold;
+	color: #c7edf6;
+	line-height: 48px;
+}
+
+.number-back-white {
+	width: 75px;
+	background-color: #fefefe;
+	margin: -45px auto 0 auto;
+}
+
+.number-back-green {
+	background-color: #1ca7c2;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-radius: 25px 25px 25px 25px;
 }
 
 /* Override Jumbotron*/
@@ -352,4 +431,33 @@ body {
 
 .carousel-control-target.left {
 	
+}
+
+.ez-part-four > div {
+	height: 90px;
+}
+
+.ez-part-three {
+	margin-bottom: 60px;
+}
+
+.ez-part-two-title {
+	margin: 10px 0 15px 0;
+}
+
+.ez-part-two-logo {
+	margin: 0 0 50px 0;
+}
+
+.ez-part-two-logo > div > img {
+	margin: 10px 0 10px 0;	
+}
+.ez-part-two-title h3 {
+	font-family: UbuntuMedium;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 40px;
+	color: #36c9e5;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
