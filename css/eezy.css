@@ -139,7 +139,7 @@ body {
 	top: 95px;
 	left: 50%;
 	z-index: 15;
-	width: 60%;
+	width: 61%;
 	padding-left: 0;
 	margin-left: -30%;
 	text-align: center;
@@ -345,7 +345,8 @@ body {
 	background-color: #42454a;
 }
 
-.ez-justify {
+.ez-justify,
+.ez-co-justify {
 	text-align: justify;
 }
 
@@ -358,6 +359,18 @@ body {
 	
 	.ez-justify:nth-child(even) {
 		padding-right: 90px;
+		padding-left: 20px;
+	}
+	
+	
+	.ez-co-justify:nth-child(odd) {
+		padding-left: 105px;
+		padding-right: 20px;
+	}
+	
+	
+	.ez-co-justify:nth-child(even) {
+		padding-right: 105px;
 		padding-left: 20px;
 	}
 }
@@ -430,6 +443,14 @@ body {
 	margin: 90px 0 0 0;
 }
 
+@media (max-width: 767px) {
+	.ez-five {
+		margin: 90px 0 0 0;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
 .footer-line {
 	background-color: #1ca8c3;
 	height: 1px;
@@ -486,7 +507,12 @@ body {
 	margin-bottom: 0px;
 }
 
-
+@media (max-width:767px) {
+	.jumbotron {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
 
 .ez-titlemini {
 	padding: 5px;
