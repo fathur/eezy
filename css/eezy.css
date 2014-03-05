@@ -169,6 +169,28 @@
 }
 
 
+@media (max-width: 767px) {
+	/* Bump up size of carousel content */
+	#myCarousel .carousel-caption p {
+	  margin-bottom: 20px;
+	  font-size: 18px;
+	  line-height: 1.4;
+	 
+	  background-color: rgba(51,150,160,0.8);
+	}
+}
+
+@media (min-width: 768px) {
+	/* Bump up size of carousel content */
+	#myCarousel .carousel-caption p {
+	  margin-bottom: 20px;
+	  font-size: 21px;
+	  line-height: 1.4;
+	  padding: 20px 60px;
+	  background-color: rgba(51,150,160,0.8);
+	}
+}
+  
 .carousel-indicators-2 {
 	position: absolute;
 	top: 95px;
@@ -334,14 +356,7 @@
 
   
 
-  /* Bump up size of carousel content */
-  #myCarousel .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-    padding: 20px 60px;
-    background-color: rgba(51,150,160,0.8);
-  }
+  
 
   .featurette-heading {
     font-size: 50px;
