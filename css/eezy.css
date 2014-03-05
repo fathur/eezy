@@ -18,12 +18,21 @@
 }
 
 /* Padding below the footer and lighter body text */
+@media (max-width: 767px) {
+	body {
+		margin-top: 50px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}
+	
+}
 
-body {
-	margin-top: 75px;
-	/* padding-bottom: 40px; */
-	color: #5a5a5a;
-	font-family: Ubuntu;
+@media (min-width: 768px) {
+	body {
+		margin-top: 75px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}
 }
 
 .arrow-down {
@@ -61,6 +70,12 @@ body {
   padding-right: 15px;
 }
 
+
+@media (min-width: 768px) {
+	.ez-pull-right {
+		float: right !important;
+	}
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -127,12 +142,32 @@ body {
 	height: 1060px;
 }
 
+
 #myCarousel2 .item {
 	background-color: #42464b;
 	color: #FFF;
 	height: 1060px;
 	padding-top: 75px;
 }
+
+@media (max-width: 768px) {
+	#myCarousel2 .item {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+	
+	#myCarousel3 .item {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+}
+
+.ez-img-responsive {
+  
+  max-width: 100%;
+  height: auto;
+}
+
 
 .carousel-indicators-2 {
 	position: absolute;
@@ -385,18 +420,31 @@ body {
 }
 
 .ez-content h1{
-	font-size: 40px;
-	font-family: UbuntuMedium;
-	padding-left: 90px;
-	padding-right: 90px;
+		font-size: 40px;
+		font-family: UbuntuMedium;
 }
 
 .ez-content h2{
 	font-size: 25px;	
 	font-family: UbuntuMedium;
-	padding-left: 90px;
-	padding-right: 90px;
+	
 }
+
+@media (min-width: 768px) {
+	.ez-content h1{
+		
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+	
+	.ez-content h2{
+		
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+}
+
+
 
 .ez-content h3 {
 	font-family: UbuntuBold;
