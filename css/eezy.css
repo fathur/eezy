@@ -30,6 +30,14 @@ body {
 	margin-top: -45px;	
 }
 
+.arrow-down-cleints {
+	margin-top: -10px;
+}
+
+.arrow-down-carousel {
+	margin-bottom: -27px;	
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -123,8 +131,47 @@ body {
 	background-color: #42464b;
 	color: #FFF;
 	height: 1060px;
+	padding-top: 75px;
 }
 
+.carousel-indicators-2 {
+	position: absolute;
+	top: 95px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+	height: 25px;
+}
+
+.carousel-indicators-2 .active {
+	background-color: #FFF;
+	border-color: #FFF;
+	color: #1ca8c3;
+	width: auto;
+	height: auto;
+	margin: 0 50px;
+}
+
+.carousel-indicators-2 li {
+	display: inline-block;
+	width: auto;
+	padding: 0 5px 2px 5px;
+	margin: 0 50px;
+	background-color: #a1a3a5;
+	cursor: pointer;
+	text-indent: 0px;
+	height: auto;
+	border: 1px solid #a1a3a5;
+	border-radius: 7px;
+}
+
+.col-arrow-down {
+	z-index: 2;
+}
 .carousel-control-2 {
 	margin: 530px 0 0 0;
 	position: absolute;
