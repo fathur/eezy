@@ -765,3 +765,20 @@
 	position: absolute;
 	top: -45px;
 }
+
+@media (min-width: 768px) {
+	.line-1 {
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		z-index: -10;
+		top: -7px;
+		border-color: #A1A3A5;
+	}
+}
+
+@media (max-width: 767px) {
+	.line-1 {
+		display: none;
+	}
+}
