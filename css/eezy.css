@@ -511,6 +511,12 @@
 	}
 	
 	
+	
+}
+
+@media (min-width: 778px) {
+	
+	
 	.ez-co-justify:nth-child(odd) {
 		padding-left: 105px;
 		padding-right: 20px;
