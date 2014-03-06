@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+.number-back-green {
+	background-image: url("../img/green-circle.png");
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}

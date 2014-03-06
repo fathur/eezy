@@ -14,41 +14,44 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootcust.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/eezy.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+      <link href="css/iefix.css" rel="stylesheet">
     <![endif]-->
 
     <!-- Custom styles for this template -->
    
-    <link href="css/eezy.css" rel="stylesheet">
+    
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+  <body id="home" data-target="#topmenu" >
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topmenu">
           <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header ez-pull-left">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">EEZY|RTB</a>
+              <a class="navbar-brand" href="#home">EEZY|RTB</a>
             </div>
             <div class="navbar-collapse collapse initialism ez-pull-right">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="#about">benefits</a></li>
-                <li><a href="#contact">Cases & Clients</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#cases">Cases & Clients</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -107,13 +110,9 @@
     <div class="jumbotron ez-green">
     	<div class="container">
 	    	<div class="row ez-part-two-title">
-	    		<div class="col-lg-12 text-center">
-	    			
-	    			<h3 class="initialism">EEZY IS TRUSTED BY</h3>
-	    			
+	    		<div class="col-lg-12 text-center">	    			
+	    			<h3 class="initialism">EEZY IS TRUSTED BY</h3>	    			
 	    		</div>
-	    		
-	    		
 	    	</div>
 	    	
 	    	<div class="row ez-part-two-logo">
@@ -133,8 +132,12 @@
     	</div>
     </div>
     
-    <div class="jumbotron ez-white">
+    <div class="jumbotron ez-white" id="about" >
+    	
     	<div class="container">
+    	
+    		
+    		
     		<div class="row">
 	    		<div class="col-lg-12 text-center">
 	    			<img alt="" src="img/arrow_down_1.png" class="arrow-down">	    				    			
@@ -307,6 +310,7 @@
      <!-- Carausel ke dua - Target Like a Laser
     ================================================== -->
     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    	<div id="benefits" class="target-menu"></div>
 		<div class="row" style="margin-right: 0px;">
 	    	<div class="col-lg-12 text-center col-arrow-down" style="padding-right: 0px;">
 	    		<img alt="" src="img/arrow_down_1.png" class="arrow-down-carousel">	    				    			
@@ -373,17 +377,18 @@
 			</div>
 		</div>
 		<a class="left carousel-control-2" href="#myCarousel2" data-slide="prev">
-			<img alt="" src="img/arrow-rl.png">
+			<img alt="" src="img/arrow-l.png">
 		</a>
 		<a class="right carousel-control-2" href="#myCarousel2" data-slide="next">
-			<img alt="" src="img/arrow-rl.png">
+			<img alt="" src="img/arrow-r.png">
 		</a>
 	</div><!-- /.carousel -->
 
     
 	 <!-- Carousel ke tiga
 	================================================== -->
-	<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+	<div id="myCarousel3" class="carousel slide" data-offset="100" data-ride="carousel">
+		<div id="cases" class="target-menu"></div>
 		<div class="row" style="margin-right: 0px;">
 	    	<div class="col-lg-12 text-center col-arrow-down" style="padding-right: 0px;">
 	    		<img alt="" src="img/arrow_down_2.png" class="arrow-down-carousel">	    				    			
@@ -428,13 +433,13 @@
 				
 			</div>
 		</div>
-		<a class="left carousel-control-3" href="#myCarousel3" data-slide="prev"><img alt="" src="img/arrow-rl.png"></a>
-		<a class="right carousel-control-3" href="#myCarousel3" data-slide="next"><img alt="" src="img/arrow-rl.png"></a>
+		<a class="left carousel-control-3" href="#myCarousel3" data-slide="prev"><img alt="" src="img/arrow-l.png"></a>
+		<a class="right carousel-control-3" href="#myCarousel3" data-slide="next"><img alt="" src="img/arrow-r.png"></a>
 	</div><!-- /.carousel -->
     
     <!-- We are happy to work for (page 8) -->
     
-    <div class="jumbotron ez-white">
+    <div class="jumbotron ez-white"  id="#clients">
     	<div class="container">
 	    	 
 	    	<div class="row">
@@ -476,7 +481,8 @@
     
     <!-- Contact Begin -->
     
-    <div class="jumbotron ez-gray">
+    <div class="jumbotron ez-gray" id="contact">
+    	
     	<div class="container">
     	
     		<div class="row">
@@ -529,6 +535,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-   
+	<script src="js/eezy.js"></script>
   </body>
 </html>

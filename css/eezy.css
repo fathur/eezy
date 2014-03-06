@@ -1,20 +1,27 @@
 /*Font Definition*/
 @font-face
 {
-	font-family: UbuntuMedium;
-	src: url(../fonts/Ubuntu-M.ttf);
+	font-family: 'UbuntuMedium';
+	src: url('../fonts/Ubuntu-M.eot');
+	src: url('../fonts/Ubuntu-M.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu-M.ttf') format('truetype');
 }
 
 @font-face
 {
-	font-family: Ubuntu;
-	src: url(../fonts/Ubuntu-R.ttf);
+	font-family:'Ubuntu';
+	src: url('../fonts/Ubuntu-R.eot');
+	src: url('../fonts/Ubuntu-R.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu-R.ttf') format('truetype');
 }
 
 @font-face
 {
-	font-family: UbuntuBold;
-	src: url(../fonts/Ubuntu-B.ttf);
+	font-family: 'UbuntuBold';
+	src: url('../fonts/Ubuntu-B.eot');
+	src: url('../fonts/Ubuntu-B.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu-B.ttf') format('truetype');
+	
 }
 
 /* Padding below the footer and lighter body text */
@@ -37,6 +44,9 @@
 
 .arrow-down {
 	margin-top: -45px;	
+	zoom: 1;
+	position: relative;
+	
 }
 
 .arrow-down-cleints {
@@ -70,10 +80,21 @@
   padding-right: 15px;
 }
 
+.ez-pull-right {
+	float: right;
+}
 
-@media (min-width: 768px) {
+.ez-pull-left {
+	float: left;
+}
+	
+@media (max-width: 767px) {
+	.ez-pull-left {
+		float: none;
+	}
+	
 	.ez-pull-right {
-		float: right !important;
+		float: none ;
 	}
 }
 
@@ -150,13 +171,13 @@
 	padding-top: 75px;
 }
 
-@media (max-width: 768px) {
-	#myCarousel2 .item {
+@media (max-width: 991px) {
+	#myCarousel2 > .item > .container {
 		padding-right: 100px;
 		padding-left: 100px;
 	}
 	
-	#myCarousel3 .item {
+	#myCarousel3 > .item > .container {
 		padding-right: 100px;
 		padding-left: 100px;
 	}
@@ -191,40 +212,117 @@
 	}
 }
   
-.carousel-indicators-2 {
-	position: absolute;
-	top: 95px;
-	left: 50%;
-	z-index: 15;
-	width: 61%;
-	padding-left: 0;
-	margin-left: -30%;
-	text-align: center;
-	list-style: none;
-	height: 25px;
+@media (max-width:767px) {
+	.carousel-indicators-2 {
+		position: absolute;
+		top: 95px;
+		left: 50%;
+		z-index: 15;
+		width: 61%;
+		padding-left: 0;
+		margin-left: -30%;
+		text-align: center;
+		list-style: none;
+		height: 25px;
+	}
+	
+	.carousel-indicators-2 .active {
+		background-color: #FFF;
+		border-color: #FFF;
+		color: #1ca8c3;
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.carousel-indicators-2 li {
+		display: inline-block;
+		width: 100%;
+		padding: 0 5px 2px 5px;
+		
+		background-color: #a1a3a5;
+		cursor: pointer;
+		text-indent: 0px;
+		height: auto;
+		border: 1px solid #a1a3a5;
+		border-radius: 7px;
+	}
 }
 
-.carousel-indicators-2 .active {
-	background-color: #FFF;
-	border-color: #FFF;
-	color: #1ca8c3;
-	width: auto;
-	height: auto;
-	margin: 0 50px;
+@media (min-width:768px) and (max-width:1199px) {
+	.carousel-indicators-2 {
+		position: absolute;
+		top: 95px;
+		left: 50%;
+		z-index: 15;
+		width: 61%;
+		padding-left: 0;
+		margin-left: -30%;
+		text-align: center;
+		list-style: none;
+		height: 25px;
+	}
+	
+	.carousel-indicators-2 .active {
+		background-color: #FFF;
+		border-color: #FFF;
+		color: #1ca8c3;
+		width: auto;
+		height: auto;
+		
+	}
+
+	.carousel-indicators-2 li {
+		display: inline-block;
+		width: auto;
+		padding: 0 5px 2px 5px;
+		
+		background-color: #a1a3a5;
+		cursor: pointer;
+		text-indent: 0px;
+		height: auto;
+		border: 1px solid #a1a3a5;
+		border-radius: 7px;
+	}
 }
 
-.carousel-indicators-2 li {
-	display: inline-block;
-	width: auto;
-	padding: 0 5px 2px 5px;
-	margin: 0 50px;
-	background-color: #a1a3a5;
-	cursor: pointer;
-	text-indent: 0px;
-	height: auto;
-	border: 1px solid #a1a3a5;
-	border-radius: 7px;
+@media (min-width: 1200px) {
+	.carousel-indicators-2 {
+		position: absolute;
+		top: 95px;
+		left: 50%;
+		z-index: 15;
+		width: 61%;
+		padding-left: 0;
+		margin-left: -30%;
+		text-align: center;
+		list-style: none;
+		height: 25px;
+	}
+	
+	.carousel-indicators-2 .active {
+		background-color: #FFF;
+		border-color: #FFF;
+		color: #1ca8c3;
+		width: auto;
+		height: auto;
+		margin: 0 50px;
+	}
+
+	.carousel-indicators-2 li {
+		display: inline-block;
+		width: auto;
+		padding: 0 5px 2px 5px;
+		margin: 0 50px;
+		background-color: #a1a3a5;
+		cursor: pointer;
+		text-indent: 0px;
+		height: auto;
+		border: 1px solid #a1a3a5;
+		border-radius: 7px;
+	}
 }
+
 
 .col-arrow-down {
 	z-index: 2;
@@ -265,7 +363,7 @@
 	opacity: .5;
 	height: 45px;
 }
-
+/*
 .carousel-control-2.left > img,
 .carousel-control-3.left > img {
 	-moz-transform: rotate(180deg);
@@ -273,7 +371,7 @@
 	-o-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
-}
+}*/
 
 .carousel-control-2.right,
 .carousel-control-3.right {
@@ -401,7 +499,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
 	.ez-justify:nth-child(odd) {
 		padding-left: 90px;
 		padding-right: 20px;
@@ -504,6 +602,7 @@
 
 .ez-five {
 	margin: 90px 0 0 0;
+	
 }
 
 @media (max-width: 767px) {
@@ -544,7 +643,8 @@
 	font-size: 30px;
 	font-family: UbuntuBold;
 	color: #c7edf6;
-	line-height: 48px;
+	line-height: 45px;
+	margin-left: -2px;
 }
 
 .number-back-white {
@@ -554,13 +654,19 @@
 }
 
 .number-back-green {
-	background-color: #1ca7c2;
+	/*background-color: #1ca7c2;
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 	
 	-webkit-border-radius: 25px 25px 25px 25px;
 	border-radius: 25px 25px 25px 25px;
+	*/
+	background-image: url("../img/green-circle.png");
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
 }
 
 /* Override Jumbotron*/
@@ -628,4 +734,9 @@
 	font-size: 24px;
 	text-align: left;
 	margin-top: 30px;
+}
+
+.target-menu {
+	position: absolute;
+	top: -45px;
 }
