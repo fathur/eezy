@@ -164,12 +164,7 @@
 }
 
 
-#myCarousel2 .item {
-	background-color: #42464b;
-	color: #FFF;
-	height: 1060px;
-	padding-top: 75px;
-}
+
 
 @media (max-width: 991px) {
 	#myCarousel2 > .item > .container {
@@ -213,6 +208,14 @@
 }
   
 @media (max-width:767px) {
+	
+	#myCarousel2 .item {
+		background-color: #42464b;
+		color: #FFF;
+		height: 1060px;
+		padding-top: 175px;
+	}
+
 	.carousel-indicators-2 {
 		position: absolute;
 		top: 95px;
@@ -250,6 +253,14 @@
 }
 
 @media (min-width:768px) and (max-width:1199px) {
+	
+	#myCarousel2 .item {
+		background-color: #42464b;
+		color: #FFF;
+		height: 1060px;
+		padding-top: 75px;
+	}
+
 	.carousel-indicators-2 {
 		position: absolute;
 		top: 95px;
@@ -287,6 +298,14 @@
 }
 
 @media (min-width: 1200px) {
+	
+	#myCarousel2 .item {
+		background-color: #42464b;
+		color: #FFF;
+		height: 1060px;
+		padding-top: 75px;
+	}
+
 	.carousel-indicators-2 {
 		position: absolute;
 		top: 95px;
