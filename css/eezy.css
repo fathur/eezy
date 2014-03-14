@@ -534,7 +534,8 @@ span.ez-subtitle-co2 {
 }
 
 .ez-justify,
-.ez-co-justify {
+.ez-co-justify,
+.ez-co1-justify {
 	text-align: justify;
 }
 
@@ -566,6 +567,10 @@ span.ez-subtitle-co2 {
 	.ez-co-justify:nth-child(even) {
 		padding-right: 105px;
 		padding-left: 20px;
+	}
+	
+	.ez-co1-justify {
+		padding: 0 105px;
 	}
 }
 
