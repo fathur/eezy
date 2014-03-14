@@ -61,6 +61,13 @@
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+@media (max-width: 767px) {
+	.brand-img {
+		margin-top: -13px;	
+	}
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -156,14 +163,19 @@
 }
 
 #myCarousel .carousel-caption > img {
-	margin-bottom: 75px;
+	margin-bottom: 30px;	
 }
 
 #myCarousel2 {
 	height: 1060px;
 }
 
-
+span.ez-subtitle-co2 {
+	
+	font-size: 17px;
+	color: #1ca8c3;
+	font-family: UbuntuBold;
+}
 
 
 @media (max-width: 991px) {
@@ -191,7 +203,7 @@
 	  margin-bottom: 20px;
 	  font-size: 18px;
 	  line-height: 1.4;
-	 
+		padding: 2px 5px;
 	  background-color: rgba(51,150,160,0.8);
 	}
 }
@@ -200,9 +212,10 @@
 	/* Bump up size of carousel content */
 	#myCarousel .carousel-caption p {
 	  margin-bottom: 20px;
+	  /*width: 630px;*/
 	  font-size: 21px;
 	  line-height: 1.4;
-	  padding: 20px 60px;
+	  padding: 10px 10px;
 	  background-color: rgba(51,150,160,0.8);
 	}
 }
@@ -592,6 +605,7 @@
 }
 
 .ez-content p {
+	font-family: Ubuntu;
 	font-size: 16px;
 	line-height: 1.7;
 	display: block;
@@ -781,4 +795,20 @@
 	.line-1 {
 		display: none;
 	}
+}
+
+.ez-case {
+	float: left;
+	background-color: #a1a3a5;
+	padding: 2px 10px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.ez-case-item {
+	font-weight: bold;
+	float: left;
+	
+	margin-left: 10px;
+	display: block;
 }
