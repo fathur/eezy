@@ -1,22 +1,20 @@
-/*Font Definition*/
-@font-face
-{
+
+/**
+ * Font Definition
+ */
+@font-face {
 	font-family: 'UbuntuMedium';
 	src: url('../fonts/Ubuntu-M.eot');
 	src: url('../fonts/Ubuntu-M.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Ubuntu-M.ttf') format('truetype');
 }
-
-@font-face
-{
+@font-face {
 	font-family:'Ubuntu';
 	src: url('../fonts/Ubuntu-R.eot');
 	src: url('../fonts/Ubuntu-R.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Ubuntu-R.ttf') format('truetype');
 }
-
-@font-face
-{
+@font-face {
 	font-family: 'UbuntuBold';
 	src: url('../fonts/Ubuntu-B.eot');
 	src: url('../fonts/Ubuntu-B.eot?#iefix') format('embedded-opentype'),
@@ -24,103 +22,26 @@
 	
 }
 
-/* Padding below the footer and lighter body text */
-@media (max-width: 767px) {
-	body {
-		margin-top: 50px;
-		color: #5a5a5a;
-		font-family: Ubuntu;
-	}
-	
+/* Global css */
+.ez-titlemini {
+	padding: 5px;
+	margin-top: 63px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }
-
-@media (min-width: 768px) {
-	body {
-		margin-top: 75px;
-		color: #5a5a5a;
-		font-family: Ubuntu;
-	}
-}
-
 .arrow-down {
 	margin-top: -45px;	
 	zoom: 1;
-	position: relative;
-	
+	position: relative;	
 }
-
 .arrow-down-cleints {
 	margin-top: -10px;
 }
-
 .arrow-down-carousel {
 	margin-bottom: -27px;	
 }
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-
-@media (max-width: 767px) {
-	.brand-img {
-		margin-top: -13px;	
-	}
-}
-
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: bolder;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.ez-pull-right {
-	float: right;
-}
-
-.ez-pull-left {
-	float: left;
-}
-	
-@media (max-width: 767px) {
-	.ez-pull-left {
-		float: none;
-	}
-	
-	.ez-pull-right {
-		float: none ;
-	}
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  
-}
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  
-  /*background-color: #777;*/
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -129,17 +50,92 @@
   min-width: 100%;
   height: 580px;
 }
-
 .carousel-indicators li {
 	background-color: #FFFFFF;
 }
-
 .carousel-indicators .active {
 	background-color: #1ca8c3;
 	border-color: #1ca8c3;
 }
+.ez-carousel-green {
+	background-color: rgba(28,168,195,0.7);
+	padding: 10px 60px;
+}
+.ez-img-responsive {  
+  max-width: 100%;
+  height: auto;
+}
+.target-menu {
+	position: absolute;
+	top: -45px;
+}
+.col-arrow-down {
+	z-index: 2;
+}
+.ez-green {
+	background-color: #1ca8c3;
+	color: #fefefe;
+}
 
-@media screen and (min-width: 768px){}
+.ez-white {
+	background-color: #fefefe;
+	font-size: 12px;
+}
+
+.ez-gray {
+	background-color: #e3e3e3;
+}
+
+.ez-dark-gray {
+	background-color: #42454a;
+}
+.ez-content {
+	margin-top: 35px;
+	/* margin-bottom: 50px;*/
+}
+
+.ez-title-content {
+	margin-bottom: 63px;
+}
+
+.ez-content h1{
+		font-size: 40px;
+		font-family: UbuntuMedium;
+}
+
+.ez-content h2{
+	font-size: 25px;	
+	font-family: UbuntuMedium;
+	
+}
+.ez-content h3 {
+	font-family: UbuntuBold;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.ez-content p {
+	font-family: Ubuntu;
+	font-size: 16px;
+	line-height: 1.7;
+	display: block;
+}
+
+.ez-itext {
+	font-family: UbuntuBold;
+}
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 900px;
+	}
+}
+@media screen and (min-width: 768px){
 	.carousel-caption {
 		right: 27%;
 		left: 27%;
@@ -147,66 +143,99 @@
 		
 	}
 }
-
-.ez-carousel-green {
-	background-color: rgba(28,168,195,0.7);
-	padding: 10px 60px;
+@media (max-width: 767px) {
+	body {
+		margin-top: 50px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}
+	
+	.jumbotron {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+@media (min-width: 768px) {
+	body {
+		margin-top: 75px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}
+	
+	.ez-content h1{
+		
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+	
+	.ez-content h2{
+		
+		padding-left: 90px;
+		padding-right: 90px;
+	}
 }
 
+
+/* Navigation Bar */
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+.navbar-wrapper .container {
+	padding-left: 0;
+	padding-right: 0;
+	font-weight: bolder;
+}
+.navbar-wrapper .navbar {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+@media (max-width: 767px) {
+	.ez-pull-left {
+		float: none;
+	}	
+	.ez-pull-right {
+		float: none ;
+	}	
+	.brand-img {
+		margin-top: -13px;	
+	}
+}
+@media (min-width: 768px) {
+	.navbar-wrapper {
+		margin-top: 20px;
+	}
+	.navbar-wrapper .container {
+		padding-left:  15px;
+		padding-right: 15px;
+	}
+	.navbar-wrapper .navbar {
+		padding-left:  0;
+		padding-right: 0;
+	}
+	.ez-pull-right {
+		float: right;
+	}	
+	.ez-pull-left {
+		float: left;
+	}
+}
+
+/* Carousel pertama */
 #myCarousel {
 	height: 580px;
 }
-
 #myCarousel .item {
 	background-color: #e3e3e3;
 	height: 580px;
 }
-
 #myCarousel .carousel-caption > img {
 	margin-bottom: 30px;	
 }
-
-@media (min-width: 768px) {
-	#myCarousel2 {
-		height: 1060px;
-	}
-}
-
 @media (max-width: 767px) {
-	#myCarousel2 {
-		height: 1350px;
-	}
-}
-
-span.ez-subtitle-co2 {
-	
-	font-size: 17px;
-	color: #1ca8c3;
-	font-family: UbuntuBold;
-}
-
-
-@media (max-width: 991px) {
-	#myCarousel2 > .item > .container {
-		padding-right: 100px;
-		padding-left: 100px;
-	}
-	
-	#myCarousel3 > .item > .container {
-		padding-right: 100px;
-		padding-left: 100px;
-	}
-}
-
-.ez-img-responsive {
-  
-  max-width: 100%;
-  height: auto;
-}
-
-
-@media (max-width: 767px) {
-	/* Bump up size of carousel content */
 	#myCarousel .carousel-caption p {
 	  margin-bottom: 20px;
 	  font-size: 18px;
@@ -217,7 +246,6 @@ span.ez-subtitle-co2 {
 }
 
 @media (min-width: 768px) {
-	/* Bump up size of carousel content */
 	#myCarousel .carousel-caption p {
 	  margin-bottom: 20px;
 	  /*width: 630px;*/
@@ -227,9 +255,127 @@ span.ez-subtitle-co2 {
 	  background-color: rgba(51,150,160,0.8);
 	}
 }
-  
-@media (max-width:767px) {
+
+/* Trusted by green */
+.ez-part-two-title {
+	margin: 10px 0 15px 0;
+}
+
+.ez-part-two-logo {
+	margin: 0 0 50px 0;
+}
+
+.ez-part-two-logo > div > img {
+	margin: 10px 0 10px 0;	
+}
+.ez-part-two-title h3 {
+	font-family: UbuntuMedium;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 40px;
+	color: #36c9e5;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* About  */
+.ez-part-three {
+	margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* An unmatched data driven solutions */
+.ez-part-four > div {
+	height: 90px;
+}
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* Take it eezy */
+.ez-numbering .number {
+	font-size: 30px;
+	font-family: UbuntuBold;
+	color: #c7edf6;
+	line-height: 45px;
+	margin-left: -2px;
+}
+
+.number-back-white {
+	width: 75px;
+	background-color: #fefefe;
+	margin: -45px auto 0 auto;
+}
+.number-back-green {
+
+	background-image: url("../img/green-circle.png");
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.ez-part-five {
+	margin: 0 0 100px 0;	
+}
+
+.ez-five {
+	margin: 90px 0 0 0;
 	
+}
+
+@media (max-width: 767px) {
+	.ez-five {
+		margin: 90px 0 0 0;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+@media (min-width: 768px) {
+}
+
+/* Carousel kedua */
+span.ez-subtitle-co2 {	
+	font-size: 17px;
+	color: #1ca8c3;
+	font-family: UbuntuBold;
+}
+.ez-case {
+	float: left;
+	background-color: #a1a3a5;
+	padding: 2px 10px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.ez-case-item {
+	font-weight: bold;
+	float: left;
+	
+	margin-left: 10px;
+	display: block;
+}
+@media (max-width: 767px) {
+	#myCarousel2 {
+		height: 1350px;
+	}
+	.carousel-control-2 {
+		display: none;
+	}
+	.line-1 {
+		display: none;
+	}
 	#myCarousel2 .item {
 		background-color: #42464b;
 		color: #FFF;
@@ -272,7 +418,61 @@ span.ez-subtitle-co2 {
 		border-radius: 7px;
 	}
 }
-
+@media (min-width: 768px) {
+	#myCarousel2 {
+		height: 1060px;
+	}
+	.carousel-control-2 {
+		margin: 530px 0 0 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		font-size: 20px;
+		height: 45px;
+		color: #FFF;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		filter: alpha(opacity=50);
+		opacity: .5;
+	}
+	
+	.carousel-control-2.left {
+		left: 0;
+		right: auto;
+	}
+	
+	.carousel-control-2.right {
+		right: 0;
+		left: auto;
+		
+	}
+	.line-1 {
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		z-index: -10;
+		top: -7px;
+		border-color: #A1A3A5;
+	}
+	.ez-co-justify:nth-child(odd) {
+		padding-left: 105px;
+		padding-right: 20px;
+	}
+	
+	
+	.ez-co-justify:nth-child(even) {
+		padding-right: 105px;
+		padding-left: 20px;
+	}
+}
+@media (max-width: 991px) {
+	#myCarousel2 > .item > .container {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+}
 @media (min-width:768px) and (max-width:1199px) {
 	
 	#myCarousel2 .item {
@@ -317,7 +517,6 @@ span.ez-subtitle-co2 {
 		border-radius: 7px;
 	}
 }
-
 @media (min-width: 1200px) {
 	
 	#myCarousel2 .item {
@@ -363,13 +562,20 @@ span.ez-subtitle-co2 {
 	}
 }
 
-
-.col-arrow-down {
-	z-index: 2;
+/* Caraousel ketiga */
+#myCarousel3 {
+	height: 1390px;
 }
 
+#myCarousel3 .item {
+	background-color: #e3e3e3;
+	height: 1390px;
+}
+.ez-title-co3 {
+	color: #1ca8c3;
+	font-size: 36px;
+}
 @media (max-width: 767px) {
-	.carousel-control-2,
 	.carousel-control-3{
 		display: none;
 	}
@@ -380,33 +586,6 @@ span.ez-subtitle-co2 {
 }
 
 @media (min-width: 768px) {
-	.carousel-control-2 {
-		margin: 530px 0 0 0;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 15%;
-		font-size: 20px;
-		height: 45px;
-		color: #FFF;
-		text-align: center;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-		filter: alpha(opacity=50);
-		opacity: .5;
-	}
-	
-	.carousel-control-2.left {
-		left: 0;
-		right: auto;
-	}
-	
-	.carousel-control-2.right {
-		right: 0;
-		left: auto;
-		
-	}
-	
 	.carousel-control-3 {
 		margin: 290px 0 0 0;
 		position: absolute;
@@ -429,136 +608,86 @@ span.ez-subtitle-co2 {
 		
 	}
 }
-
-
-
-
-
-/*
-.carousel-control-2.left > img,
-.carousel-control-3.left > img {
-	-moz-transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}*/
-
-
-
-
-#myCarousel3 {
-	height: 1390px;
-}
-
-#myCarousel3 .item {
-	background-color: #e3e3e3;
-	height: 1390px;
-}
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-left:  15px;
-    padding-right: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-left:  0;
-    padding-right: 0;
-  }
-
-  
-
-  
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
-
-
-@media (min-width: 1200px) {
-	.container {
-		width: 900px;
+@media (max-width: 991px) {
+	#myCarousel3 > .item > .container {
+		padding-right: 100px;
+		padding-left: 100px;
 	}
 }
 
-.ez-green {
+/* We are happy to work for */
+.ez-mitra {
+	margin-top: 75px;
+	margin-bottom: 120px;	
+}
+
+.ez-mitra div.text-center {
+	height: 75px;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* Contact */
+.ez-footer {
+	margin-top: -10px;
+	
+}
+
+.ez-footer p {
+	margin-top: 15px;
+	font-family: Ubuntu;
+	font-size: 16px;
+}
+
+.ez-footer img {
+	
+}
+
+.ez-footer > div {
+	margin-bottom: 40px;
+}
+.footer-line {
 	background-color: #1ca8c3;
-	color: #fefefe;
+	height: 1px;
+	-webkit-box-shadow: 0 1px 0 0px #e1f6fb;
+	box-shadow: 0 1px 0 0px #e1f6fb;
+	
+} 
+
+.footer-img-latar {
+	
+	width: 68px;
+	margin: -45px auto 0 auto;
+	background-color: #E3E3E3;
+}
+@media (max-width: 767px) {
 }
 
-.ez-white {
-	background-color: #fefefe;
-	font-size: 12px;
+@media (min-width: 768px) {
 }
 
-.ez-gray {
-	background-color: #e3e3e3;
-}
 
-.ez-dark-gray {
-	background-color: #42454a;
-}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- 
+======================================================================================================*/
+
+
+/* Since positioning the image, we need to help out the caption */
+
+
+
+
+
+
 
 .ez-justify,
 .ez-co-justify,
@@ -585,280 +714,6 @@ span.ez-subtitle-co2 {
 	}
 }
 
-@media (min-width: 778px) {
-	
-	
-	.ez-co-justify:nth-child(odd) {
-		padding-left: 105px;
-		padding-right: 20px;
-	}
-	
-	
-	.ez-co-justify:nth-child(even) {
-		padding-right: 105px;
-		padding-left: 20px;
-	}
-	
-	.ez-co1-justify {
-		padding: 0 105px;
-	}
-	
-	
-}
-
-.ez-content {
-	margin-top: 35px;
-	/* margin-bottom: 50px;*/
-}
-
-.ez-title-content {
-	margin-bottom: 63px;
-}
-
-.ez-content h1{
-		font-size: 40px;
-		font-family: UbuntuMedium;
-}
-
-.ez-content h2{
-	font-size: 25px;	
-	font-family: UbuntuMedium;
-	
-}
-
-@media (min-width: 768px) {
-	.ez-content h1{
-		
-		padding-left: 90px;
-		padding-right: 90px;
-	}
-	
-	.ez-content h2{
-		
-		padding-left: 90px;
-		padding-right: 90px;
-	}
-}
 
 
 
-.ez-content h3 {
-	font-family: UbuntuBold;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 40px;
-}
-
-.ez-content p {
-	font-family: Ubuntu;
-	font-size: 16px;
-	line-height: 1.7;
-	display: block;
-}
-
-.ez-itext {
-	font-family: UbuntuBold;
-}
-
-/* Footer Style Begin */
-.ez-footer {
-	margin-top: -10px;
-	
-}
-
-.ez-footer p {
-	margin-top: 15px;
-	font-family: Ubuntu;
-	font-size: 16px;
-}
-
-.ez-footer img {
-	
-}
-
-.ez-footer > div {
-	margin-bottom: 40px;
-}
-
-.ez-part-five {
-	margin: 0 0 100px 0;	
-}
-
-.ez-five {
-	margin: 90px 0 0 0;
-	
-}
-
-@media (max-width: 767px) {
-	.ez-five {
-		margin: 90px 0 0 0;
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-}
-
-.footer-line {
-	background-color: #1ca8c3;
-	height: 1px;
-	-webkit-box-shadow: 0 1px 0 0px #e1f6fb;
-	box-shadow: 0 1px 0 0px #e1f6fb;
-	
-} 
-
-.footer-img-latar {
-	
-	width: 68px;
-	margin: -45px auto 0 auto;
-	background-color: #E3E3E3;
-}/* Footer Style End */
-
-.ez-mitra {
-	margin-top: 75px;
-	margin-bottom: 120px;	
-}
-
-.ez-mitra div.text-center {
-	height: 75px;
-	padding-top: auto;
-	padding-bottom: auto;
-}
-
-.ez-numbering .number {
-	font-size: 30px;
-	font-family: UbuntuBold;
-	color: #c7edf6;
-	line-height: 45px;
-	margin-left: -2px;
-}
-
-.number-back-white {
-	width: 75px;
-	background-color: #fefefe;
-	margin: -45px auto 0 auto;
-}
-
-.number-back-green {
-	/*background-color: #1ca7c2;
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-	
-	-webkit-border-radius: 25px 25px 25px 25px;
-	border-radius: 25px 25px 25px 25px;
-	*/
-	background-image: url("../img/green-circle.png");
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-}
-
-/* Override Jumbotron*/
-.jumbotron {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 0px;
-}
-
-@media (max-width:767px) {
-	.jumbotron {
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-}
-
-.ez-titlemini {
-	padding: 5px;
-	margin-top: 63px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
-}
-
-
-
-
-
-
-
-.ez-part-four > div {
-	height: 90px;
-}
-
-.ez-part-three {
-	margin-bottom: 60px;
-}
-
-.ez-part-two-title {
-	margin: 10px 0 15px 0;
-}
-
-.ez-part-two-logo {
-	margin: 0 0 50px 0;
-}
-
-.ez-part-two-logo > div > img {
-	margin: 10px 0 10px 0;	
-}
-.ez-part-two-title h3 {
-	font-family: UbuntuMedium;
-	font-weight: bold;
-	font-size: 12pt;
-	line-height: 40px;
-	color: #36c9e5;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.logo-s3 {
-	text-align: right;
-	margin-right: 0px;
-}
-.logo-s3-txt {
-	color: #1ca8c3;
-	font-size: 24px;
-	text-align: left;
-	margin-top: 30px;
-}
-
-.target-menu {
-	position: absolute;
-	top: -45px;
-}
-
-@media (min-width: 768px) {
-	.line-1 {
-		position: absolute;
-		left: 25%;
-		width: 50%;
-		z-index: -10;
-		top: -7px;
-		border-color: #A1A3A5;
-	}
-}
-
-@media (max-width: 767px) {
-	.line-1 {
-		display: none;
-	}
-}
-
-.ez-case {
-	float: left;
-	background-color: #a1a3a5;
-	padding: 2px 10px;
-	-webkit-border-radius: 4px 4px 4px 4px;
-	border-radius: 4px 4px 4px 4px;
-}
-
-.ez-case-item {
-	font-weight: bold;
-	float: left;
-	
-	margin-left: 10px;
-	display: block;
-}
-
-.ez-title-co3 {
-	color: #1ca8c3;
-	font-size: 36px;
-}
