@@ -367,42 +367,73 @@ span.ez-subtitle-co2 {
 .col-arrow-down {
 	z-index: 2;
 }
-.carousel-control-2 {
-	margin: 530px 0 0 0;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 15%;
-	font-size: 20px;
-	height: 45px;
-	color: #FFF;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-	filter: alpha(opacity=50);
-	opacity: .5;
+
+@media (max-width: 767px) {
+	.carousel-control-2,
+	.carousel-control-3{
+		display: none;
+	}
+	
+	.ez-co3-justify {
+		padding: 0 25px;
+	}
 }
 
-.carousel-control-2.left {
-	left: 0;
-	right: auto;
+@media (min-width: 768px) {
+	.carousel-control-2 {
+		margin: 530px 0 0 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		font-size: 20px;
+		height: 45px;
+		color: #FFF;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		filter: alpha(opacity=50);
+		opacity: .5;
+	}
+	
+	.carousel-control-2.left {
+		left: 0;
+		right: auto;
+	}
+	
+	.carousel-control-2.right {
+		right: 0;
+		left: auto;
+		
+	}
+	
+	.carousel-control-3 {
+		margin: 290px 0 0 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		font-size: 20px;
+		color: #FFF;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		filter: alpha(opacity=50);
+		opacity: .5;
+		height: 45px;
+	}
+	
+	.carousel-control-3.right {
+		right: 0;
+		left: auto;
+		
+	}
 }
 
-.carousel-control-3 {
-	margin: 290px 0 0 0;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 15%;
-	font-size: 20px;
-	color: #FFF;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-	filter: alpha(opacity=50);
-	opacity: .5;
-	height: 45px;
-}
+
+
+
+
 /*
 .carousel-control-2.left > img,
 .carousel-control-3.left > img {
@@ -413,12 +444,8 @@ span.ez-subtitle-co2 {
 	transform: rotate(180deg);
 }*/
 
-.carousel-control-2.right,
-.carousel-control-3.right {
-	right: 0;
-	left: auto;
-	
-}
+
+
 
 #myCarousel3 {
 	height: 1390px;
@@ -535,7 +562,8 @@ span.ez-subtitle-co2 {
 
 .ez-justify,
 .ez-co-justify,
-.ez-co1-justify {
+.ez-co1-justify,
+.ez-co3-justify {
 	text-align: justify;
 }
 
@@ -552,7 +580,9 @@ span.ez-subtitle-co2 {
 	}
 	
 	
-	
+	.ez-co3-justify {
+		padding: 0 130px;
+	}
 }
 
 @media (min-width: 778px) {
@@ -572,6 +602,8 @@ span.ez-subtitle-co2 {
 	.ez-co1-justify {
 		padding: 0 105px;
 	}
+	
+	
 }
 
 .ez-content {
@@ -824,4 +856,9 @@ span.ez-subtitle-co2 {
 	
 	margin-left: 10px;
 	display: block;
+}
+
+.ez-title-co3 {
+	color: #1ca8c3;
+	font-size: 36px;
 }
