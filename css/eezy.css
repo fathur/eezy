@@ -633,7 +633,7 @@ span.ez-subtitle-co2 {
 	color: #1ca8c3;
 	font-size: 36px;
 }
-@media screen and (max-width: 767px) and (orientation:potrait) {
+@media (max-width: 767px) {
 	#ez-carousel-3 {
 		height: 1655px;
 	}
@@ -656,7 +656,10 @@ span.ez-subtitle-co2 {
 		height: 0px;
 	}
 }
-@media screen and (max-width: 767px) and (orientation:landscape) {
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
 	#ez-carousel-3 {
 		height: 1155px;
 	}
@@ -679,7 +682,6 @@ span.ez-subtitle-co2 {
 		height: 0px;
 	}
 }
-
 @media (min-width: 768px) {
 	#ez-carousel-3 {
 		height: 1390px;
