@@ -22,24 +22,44 @@
 	
 }
 
-/* Global css */
+/** 
+ * ===========
+ * GLOBAL CSS 
+ * ===========
+ */
+
+/* Mini title and colorize */
 .ez-titlemini {
 	padding: 5px;
-	margin-top: 63px;
+	/* margin-top: 63px; */
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
-.arrow-down {
+.ez-green {
+	background-color: #1ca8c3;
+	color: #fefefe;
+}
+.ez-white {
+	background-color: #fefefe;
+	font-size: 12px;
+}
+
+/* Jumbotron background */
+.ez-gray {
+	background-color: #e3e3e3;
+}
+
+/* Arrow down */
+.arrow-down-about {
 	margin-top: -45px;	
 	zoom: 1;
 	position: relative;	
 }
-.arrow-down-cleints {
-	margin-top: -10px;
-}
 .arrow-down-carousel {
 	margin-bottom: -27px;	
 }
+
+
 .carousel-caption {
   z-index: 10;
 }
@@ -72,23 +92,7 @@
 .col-arrow-down {
 	z-index: 2;
 }
-.ez-green {
-	background-color: #1ca8c3;
-	color: #fefefe;
-}
 
-.ez-white {
-	background-color: #fefefe;
-	font-size: 12px;
-}
-
-.ez-gray {
-	background-color: #e3e3e3;
-}
-
-.ez-dark-gray {
-	background-color: #42454a;
-}
 .ez-content {
 	margin-top: 35px;
 	/* margin-bottom: 50px;*/
@@ -154,6 +158,14 @@
 		padding-right: 0px;
 		padding-left: 0px;
 	}
+	
+	.arrow-down-cleints {
+		margin-top: -40px;
+	}
+	.arrow-down-carousel-cases {
+		margin-top: -30px;
+	}
+	
 }
 @media (min-width: 768px) {
 	body {
@@ -172,6 +184,12 @@
 		
 		padding-left: 90px;
 		padding-right: 90px;
+	}
+	.arrow-down-cleints {
+		margin-top: -10px;
+	}
+	.arrow-down-carousel-cases {
+		margin-bottom: -27px;	
 	}
 }
 
@@ -227,30 +245,30 @@
 /* Carousel pertama */
 
 
-#myCarousel .carousel-caption > img {
+#ez-carousel-1 .carousel-caption > img {
 	margin-bottom: 30px;	
 }
 @media (max-width: 600px) {
-	#myCarousel {
+	#ez-carousel-1 {
 		height: 400px;
 	}
-	#myCarousel .item {
+	#ez-carousel-1 .item {
 		background-color: #e3e3e3;
 		height: 400px;
 	}
 }
 @media (min-width: 601px) {
-	#myCarousel {
+	#ez-carousel-1 {
 		height: 580px;
 	}
-	#myCarousel .item {
+	#ez-carousel-1 .item {
 		background-color: #e3e3e3;
 		height: 580px;
 	}
 }
 @media (max-width: 767px) {
 	
-	#myCarousel .carousel-caption p {
+	#ez-carousel-1 .carousel-caption p {
 	  margin-bottom: 20px;
 	  font-size: 18px;
 	  line-height: 1.4;
@@ -261,7 +279,7 @@
 
 @media (min-width: 768px) {
 	
-	#myCarousel .carousel-caption p {
+	#ez-carousel-1 .carousel-caption p {
 	  margin-bottom: 20px;
 	  /*width: 630px;*/
 	  font-size: 21px;
@@ -276,9 +294,7 @@
 	margin: 10px 0 15px 0;
 }
 
-.ez-part-two-logo {
-	margin: 0 0 50px 0;
-}
+
 
 .ez-part-two-logo > div > img {
 	margin: 10px 0 10px 0;	
@@ -294,19 +310,29 @@
 }
 
 @media (max-width: 767px) {
+	.ez-part-two-logo {
+		margin: 0 0 37px 0;
+	}
 }
 
 @media (min-width: 768px) {
+	.ez-part-two-logo {
+		margin: 0 0 50px 0;
+	}
 }
 
 /* About  */
-.ez-part-three {
-	margin-bottom: 60px;
-}
+
 @media (max-width: 767px) {
+	.ez-part-three {
+		margin-bottom: 28px;
+	}
 }
 
 @media (min-width: 768px) {
+	.ez-part-three {
+		margin-bottom: 60px;
+	}
 }
 
 /* An unmatched data driven solutions */
@@ -314,9 +340,14 @@
 	height: 90px;
 }
 @media (max-width: 767px) {
+	.ez-part-four {
+		margin-bottom: 15px;
+	}
 }
 
 @media (min-width: 768px) {
+	.ez-part-four {
+	}
 }
 
 /* Take it eezy */
@@ -341,16 +372,14 @@
 	height: 50px;
 	margin: 0 auto;
 }
-.ez-part-five {
-	margin: 0 0 100px 0;	
-}
 
-.ez-five {
-	margin: 90px 0 0 0;
-	
-}
+
+
 
 @media (max-width: 767px) {
+	.ez-part-five {
+		margin: 0;	
+	}
 	.ez-five {
 		margin: 90px 0 0 0;
 		padding-right: 0px;
@@ -358,6 +387,13 @@
 	}
 }
 @media (min-width: 768px) {
+	.ez-part-five {
+		margin: 0 0 100px 0;	
+	}
+	.ez-five {
+		margin: 90px 0 0 0;
+		
+	}
 }
 
 /* Carousel kedua */
@@ -376,8 +412,8 @@ span.ez-subtitle-co2 {
 
 
 @media (max-width: 767px) {
-	#myCarousel2 {
-		height: 1650px;
+	#ez-carousel-2 {
+		height: auto;
 	}
 	.carousel-control-2 {
 		display: none;
@@ -385,11 +421,12 @@ span.ez-subtitle-co2 {
 	.line-1 {
 		display: none;
 	}
-	#myCarousel2 .item {
+	#ez-carousel-2 .item {
 		background-color: #42464b;
 		color: #FFF;
-		height: 1650px;
+		height: auto;
 		padding-top: 175px;
+		padding-bottom: 60px;
 	}
 
 	.carousel-indicators-2 {
@@ -436,7 +473,7 @@ span.ez-subtitle-co2 {
 	}
 }
 @media (min-width: 768px) {
-	#myCarousel2 {
+	#ez-carousel-2 {
 		height: 1060px;
 	}
 	.carousel-control-2 {
@@ -492,14 +529,14 @@ span.ez-subtitle-co2 {
 	}
 }
 @media (max-width: 991px) {
-	#myCarousel2 > .item > .container {
+	#ez-carousel-2 > .item > .container {
 		padding-right: 100px;
 		padding-left: 100px;
 	}
 }
 @media (min-width:768px) and (max-width:1199px) {
 	
-	#myCarousel2 .item {
+	#ez-carousel-2 .item {
 		background-color: #42464b;
 		color: #FFF;
 		height: 1060px;
@@ -543,7 +580,7 @@ span.ez-subtitle-co2 {
 }
 @media (min-width: 1200px) {
 	
-	#myCarousel2 .item {
+	#ez-carousel-2 .item {
 		background-color: #42464b;
 		color: #FFF;
 		height: 1060px;
@@ -593,13 +630,15 @@ span.ez-subtitle-co2 {
 	font-size: 36px;
 }
 @media (max-width: 767px) {
-	#myCarousel3 {
-		height: 1650px;
+	#ez-carousel-3 {
+		height: auto;
 	}
 	
-	#myCarousel3 .item {
+	#ez-carousel-3 .item {
 		background-color: #e3e3e3;
-		height: 1650px;
+		height: auto;
+		padding-bottom: 60px;
+		
 	}
 	.carousel-control-3{
 		display: none;
@@ -608,14 +647,18 @@ span.ez-subtitle-co2 {
 	.ez-co3-justify {
 		padding: 0 25px;
 	}
+	#ez-arr-cor-3 {
+		padding-right: 0px;
+		height: 0px;
+	}
 }
 
 @media (min-width: 768px) {
-	#myCarousel3 {
+	#ez-carousel-3 {
 		height: 1390px;
 	}
 	
-	#myCarousel3 .item {
+	#ez-carousel-3 .item {
 		background-color: #e3e3e3;
 		height: 1390px;
 	}
@@ -642,17 +685,14 @@ span.ez-subtitle-co2 {
 	}
 }
 @media (max-width: 991px) {
-	#myCarousel3 > .item > .container {
+	#ez-carousel-3 > .item > .container {
 		padding-right: 100px;
 		padding-left: 100px;
 	}
 }
 
 /* We are happy to work for */
-.ez-mitra {
-	margin-top: 75px;
-	margin-bottom: 120px;	
-}
+
 
 .ez-mitra div.text-center {
 	height: 75px;
@@ -660,9 +700,22 @@ span.ez-subtitle-co2 {
 	padding-bottom: auto;
 }
 @media (max-width: 767px) {
+	.ez-mitra {
+		margin-top: 75px;
+		margin-bottom: 20px;	
+	}
 }
 
 @media (min-width: 768px) {
+	.ez-mitra {
+		margin-top: 75px;
+		margin-bottom: 113px;	
+	}
+	
+	#deltallyod,
+	#trimbos {
+		margin-top: 17px;
+	}
 }
 
 /* Contact */
