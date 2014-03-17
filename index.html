@@ -64,12 +64,12 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="ez-carousel-1" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#ez-carousel-1" data-slide-to="0" class="active"></li>
+        <li data-target="#ez-carousel-1" data-slide-to="1"></li>
+        <li data-target="#ez-carousel-1" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
@@ -138,7 +138,7 @@
     		
     		<div class="row">
 	    		<div class="col-lg-12 text-center">
-	    			<img alt="" src="img/arrow_down_1.png" class="arrow-down">	    				    			
+	    			<img alt="" src="img/arrow_down_1.png" class="arrow-down-about">	    				    			
 	    		</div>	    			    		
 	    	</div>
 	    	
@@ -321,7 +321,7 @@
     
      <!-- Carausel ke dua - Target Like a Laser
     ================================================== -->
-    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <div id="ez-carousel-2" class="carousel slide" data-ride="carousel">
     	<div id="benefits" class="target-menu"></div>
 		<div class="row" style="margin-right: 0px;">
 	    	<div class="col-lg-12 text-center col-arrow-down" style="padding-right: 0px;">
@@ -333,12 +333,12 @@
 	     
       <ol class="carousel-indicators carousel-indicators-2">
       
-        <li data-target="#myCarousel2" data-slide-to="0" class="active">Target Like a Laser</li>
-        <li data-target="#myCarousel2" data-slide-to="1">
+        <li data-target="#ez-carousel-2" data-slide-to="0" class="active">Target Like a Laser</li>
+        <li data-target="#ez-carousel-2" data-slide-to="1">
         	<hr class="line-1"/>
         	
         Boost Your Roi</li>
-        <li data-target="#myCarousel2" data-slide-to="2">Only Pay for Results</li>
+        <li data-target="#ez-carousel-2" data-slide-to="2">Only Pay for Results</li>
       </ol>
 		
 		<div class="carousel-inner">   	
@@ -462,10 +462,10 @@
 		    	</div>
 			</div>
 		</div>
-		<a class="left carousel-control-2" href="#myCarousel2" data-slide="prev">
+		<a class="left carousel-control-2" href="#ez-carousel-2" data-slide="prev">
 			<img alt="" src="img/arrow-l.png">
 		</a>
-		<a class="right carousel-control-2" href="#myCarousel2" data-slide="next">
+		<a class="right carousel-control-2" href="#ez-carousel-2" data-slide="next">
 			<img alt="" src="img/arrow-r.png">
 		</a>
 	</div><!-- /.carousel -->
@@ -473,11 +473,11 @@
     
 	 <!-- Carousel ke tiga
 	================================================== -->
-	<div id="myCarousel3" class="carousel slide" data-offset="100" data-ride="carousel">
+	<div id="ez-carousel-3" class="carousel slide" data-offset="100" data-ride="carousel">
 		<div id="cases" class="target-menu"></div>
 		<div class="row" style="margin-right: 0px;">
-	    	<div class="col-lg-12 text-center col-arrow-down" style="padding-right: 0px;">
-	    		<img alt="" src="img/arrow_down_2.png" class="arrow-down-carousel">	    				    			
+	    	<div class="col-lg-12 text-center col-arrow-down" id="ez-arr-cor-3">
+	    		<img alt="" src="img/arrow_down_2.png" class="arrow-down-carousel-cases">	    				    			
 	    	</div>	    			    		
 	    </div>
 		
@@ -635,8 +635,8 @@
 				
 			</div>
 		</div>
-		<a class="left carousel-control-3" href="#myCarousel3" data-slide="prev"><img alt="" src="img/arrow-l.png"></a>
-		<a class="right carousel-control-3" href="#myCarousel3" data-slide="next"><img alt="" src="img/arrow-r.png"></a>
+		<a class="left carousel-control-3" href="#ez-carousel-3" data-slide="prev"><img alt="" src="img/arrow-l.png"></a>
+		<a class="right carousel-control-3" href="#ez-carousel-3" data-slide="next"><img alt="" src="img/arrow-r.png"></a>
 	</div><!-- /.carousel -->
     
     <!-- We are happy to work for (page 8) -->
@@ -670,10 +670,10 @@
 	    		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
 	    			<img alt="" src="img/salland.png">	    			
 	    		</div>
-	    		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+	    		<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="deltallyod">
 	    			<img alt="" src="img/delta_llyod_x.png">	    			
 	    		</div>
-	    		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+	    		<div class="col-xs-12 col-sm-6 col-md-4 text-center" id="trimbos">
 	    			<img alt="" src="img/trimbos_institute.png">	    			
 	    		</div>
 	    	</div>
@@ -689,7 +689,7 @@
     	
     		<div class="row">
 	    		<div class="col-lg-12 text-center">
-	    			<img alt="" src="img/arrow_down_1.png" class="arrow-down">	    				    			
+	    			<img alt="" src="img/arrow_down_1.png" class="arrow-down-about">	    				    			
 	    		</div>	    			    		
 	    	</div>
 	    	
@@ -750,9 +750,9 @@
 	jQuery(document).ready(function() {
 		
 
-		$('#myCarousel.carousel').css({'margin': 0, 'width': $(window).outerWidth()});
+		$('#ez-carousel-1.carousel').css({'margin': 0, 'width': $(window).outerWidth()});
 		
-		$('#myCarousel .carousel-inner div.item > img').each(function() {
+		$('#ez-carousel-1 .carousel-inner div.item > img').each(function() {
 			var imgSrc = $(this).attr('src');
 			console.log($(this));
 			$(this).parent().css({'background': 'url('+imgSrc+') center center no-repeat', 'background-size': 'cover'});
@@ -761,7 +761,7 @@
 		});
 		
 		$(window).on('resize', function() {
-			$('#myCarousel.carousel').css({'width': $(window).outerWidth()});
+			$('#ez-carousel-1.carousel').css({'width': $(window).outerWidth()});
 		});
 	}); 
 	
