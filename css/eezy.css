@@ -633,7 +633,7 @@ span.ez-subtitle-co2 {
 	color: #1ca8c3;
 	font-size: 36px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation:potrait) {
 	#ez-carousel-3 {
 		height: 1655px;
 	}
@@ -641,6 +641,29 @@ span.ez-subtitle-co2 {
 	#ez-carousel-3 .item {
 		background-color: #e3e3e3;
 		height: 1655px;
+		padding-bottom: 60px;
+		
+	}
+	.carousel-control-3{
+		display: none;
+	}
+	
+	.ez-co3-justify {
+		padding: 0 25px;
+	}
+	#ez-arr-cor-3 {
+		padding-right: 0px;
+		height: 0px;
+	}
+}
+@media screen and (max-width: 767px) and (orientation:landscape) {
+	#ez-carousel-3 {
+		height: 1155px;
+	}
+	
+	#ez-carousel-3 .item {
+		background-color: #e3e3e3;
+		height: 1155px;
 		padding-bottom: 60px;
 		
 	}
