@@ -587,19 +587,20 @@ span.ez-subtitle-co2 {
 }
 
 /* Caraousel ketiga */
-#myCarousel3 {
-	height: 1390px;
-}
 
-#myCarousel3 .item {
-	background-color: #e3e3e3;
-	height: 1390px;
-}
 .ez-title-co3 {
 	color: #1ca8c3;
 	font-size: 36px;
 }
 @media (max-width: 767px) {
+	#myCarousel3 {
+		height: 1650px;
+	}
+	
+	#myCarousel3 .item {
+		background-color: #e3e3e3;
+		height: 1650px;
+	}
 	.carousel-control-3{
 		display: none;
 	}
@@ -610,6 +611,14 @@ span.ez-subtitle-co2 {
 }
 
 @media (min-width: 768px) {
+	#myCarousel3 {
+		height: 1390px;
+	}
+	
+	#myCarousel3 .item {
+		background-color: #e3e3e3;
+		height: 1390px;
+	}
 	.carousel-control-3 {
 		margin: 290px 0 0 0;
 		position: absolute;
