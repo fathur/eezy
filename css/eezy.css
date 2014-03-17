@@ -31,6 +31,7 @@
 /* Mini title and colorize */
 .ez-titlemini {
 	padding: 5px;
+	margin: 2px;
 	/* margin-top: 63px; */
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
@@ -43,7 +44,9 @@
 	background-color: #fefefe;
 	font-size: 12px;
 }
-
+.ez-dark-gray {
+	background-color: #a1a3a5;
+}
 /* Jumbotron background */
 .ez-gray {
 	background-color: #e3e3e3;
@@ -59,7 +62,7 @@
 	margin-bottom: -27px;	
 }
 
-
+/* Carousel */
 .carousel-caption {
   z-index: 10;
 }
@@ -77,6 +80,7 @@
 	background-color: #1ca8c3;
 	border-color: #1ca8c3;
 }
+
 .ez-carousel-green {
 	background-color: rgba(28,168,195,0.7);
 	padding: 10px 60px;
