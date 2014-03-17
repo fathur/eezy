@@ -415,9 +415,12 @@ span.ez-subtitle-co2 {
 }
 
 
-@media (max-width: 767px) {
+@media only screen 
+and (min-width : 300px) 
+and (max-width: 767px) {
 	#ez-carousel-2 {
 		height: 1675px;
+		/*height: 1280px;*/
 	}
 	.carousel-control-2 {
 		display: none;
@@ -633,32 +636,10 @@ span.ez-subtitle-co2 {
 	color: #1ca8c3;
 	font-size: 36px;
 }
-@media (max-width: 767px) {
-	#ez-carousel-3 {
-		height: 1655px;
-	}
-	
-	#ez-carousel-3 .item {
-		background-color: #e3e3e3;
-		height: 1655px;
-		padding-bottom: 60px;
-		
-	}
-	.carousel-control-3{
-		display: none;
-	}
-	
-	.ez-co3-justify {
-		padding: 0 25px;
-	}
-	#ez-arr-cor-3 {
-		padding-right: 0px;
-		height: 0px;
-	}
-}
+
 /* Smartphones (landscape) ----------- */
 @media only screen 
-and (min-width : 321px) {
+and (min-width : 300px) and (max-width: 767px) {
 /* Styles */
 	#ez-carousel-3 {
 		height: 1155px;
@@ -681,7 +662,30 @@ and (min-width : 321px) {
 		padding-right: 0px;
 		height: 0px;
 	}
-}
+}/*
+@media (max-width: 767px) {
+	#ez-carousel-3 {
+		height: 1655px;
+	}
+	
+	#ez-carousel-3 .item {
+		background-color: #e3e3e3;
+		height: 1655px;
+		padding-bottom: 60px;
+		
+	}
+	.carousel-control-3{
+		display: none;
+	}
+	
+	.ez-co3-justify {
+		padding: 0 25px;
+	}
+	#ez-arr-cor-3 {
+		padding-right: 0px;
+		height: 0px;
+	}
+}*/
 @media (min-width: 768px) {
 	#ez-carousel-3 {
 		height: 1390px;
