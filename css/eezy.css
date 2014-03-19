@@ -30,9 +30,7 @@
 	.container {
 		width: 750px;
 	}
-	.carousel-control-2 {
-		display: none;
-	}
+	
 }
 @media (min-width: 768px) {/* CSS for tablet and desktop */
 	body {
@@ -45,7 +43,11 @@
 		width: 900px;
 	}
 }
-
+@media (max-width: 991px) {
+	.carousel-control-2 {
+		display: none;
+	}
+}
 
 
 /* Carousel */
