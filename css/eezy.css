@@ -1,7 +1,6 @@
+@CHARSET "ISO-8859-1";
 
-/**
- * Font Definition
- */
+/* FONT DEFINITION */
 @font-face {
 	font-family: 'UbuntuMedium';
 	src: url('../fonts/Ubuntu-M.eot');
@@ -19,50 +18,40 @@
 	src: url('../fonts/Ubuntu-B.eot');
 	src: url('../fonts/Ubuntu-B.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Ubuntu-B.ttf') format('truetype');
+}
+
+/* GLOBAL */
+@media (max-width: 767px) { /* CSS for phone */
+	body {
+		margin-top: 50px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}	
+	.container {
+		width: 750px;
+	}
+	.carousel-control-2 {
+		display: none;
+	}
+}
+@media (min-width: 768px) {/* CSS for tablet and desktop */
+	body {
+		margin-top: 75px;
+		color: #5a5a5a;
+		font-family: Ubuntu;
+	}	
 	
+	.container {
+		width: 900px;
+	}
 }
 
-/** 
- * ===========
- * GLOBAL CSS 
- * ===========
- */
 
-/* Mini title and colorize */
-.ez-titlemini {
-	padding: 5px;
-	margin: 2px;
-	/* margin-top: 63px; */
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
-}
-.ez-green {
-	background-color: #1ca8c3;
-	color: #fefefe;
-}
-.ez-white {
-	background-color: #fefefe;
-	font-size: 12px;
-}
-.ez-dark-gray {
-	background-color: #a1a3a5;
-}
-/* Jumbotron background */
-.ez-gray {
-	background-color: #e3e3e3;
-}
-
-/* Arrow down */
-.arrow-down-about {
-	margin-top: -45px;	
-	zoom: 1;
-	position: relative;	
-}
-.arrow-down-carousel {
-	margin-bottom: -27px;	
-}
 
 /* Carousel */
+.carousel .container {
+	max-width: 100%;
+}
 .carousel-caption {
   z-index: 10;
 }
@@ -73,132 +62,103 @@
   min-width: 100%;
   height: 580px;
 }
-.carousel-indicators li {
-	background-color: #FFFFFF;
-}
-.carousel-indicators .active {
-	background-color: #1ca8c3;
-	border-color: #1ca8c3;
-}
 
-.ez-carousel-green {
-	background-color: rgba(28,168,195,0.7);
-	padding: 10px 60px;
-}
-.ez-img-responsive {  
-  max-width: 100%;
-  height: auto;
-}
-.target-menu {
-	position: absolute;
-	top: -45px;
-}
-.col-arrow-down {
-	z-index: 2;
-}
-
-.ez-content {
-	margin-top: 35px;
-	/* margin-bottom: 50px;*/
-}
-
-.ez-title-content {
-	margin-bottom: 63px;
-}
-
-.ez-content h1{
-		font-size: 40px;
-		font-family: UbuntuMedium;
-}
-
-.ez-content h2{
-	font-size: 25px;	
-	font-family: UbuntuMedium;
-	
-}
-.ez-content h3 {
-	font-family: UbuntuBold;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 40px;
-}
-
-.ez-content p {
-	font-family: Ubuntu;
-	font-size: 16px;
-	line-height: 1.7;
-	display: block;
-}
-
-.ez-itext {
-	font-family: UbuntuBold;
-}
-.jumbotron {
-	padding-top: 10px;
-	padding-bottom: 10px;
+/**/
+.jumbotron {		
 	margin-bottom: 0px;
 }
-@media (min-width: 1200px) {
-	.container {
-		width: 900px;
-	}
+.jumbotron p,
+.carousel-inner p {
+	line-height: 1.7;
+	font-size: 16px;
 }
-@media screen and (min-width: 768px){
-	.carousel-caption {
-		right: 27%;
-		left: 27%;
-		padding-bottom: 30px;
-		
-	}
+.ez-content {
+	margin: 60px 0;
 }
-@media (max-width: 767px) {
-	body {
-		margin-top: 50px;
-		color: #5a5a5a;
-		font-family: Ubuntu;
-	}
-	
+.ez-green {
+	background-color: #1ca8c3;
+	color: #fefefe;
+}
+.ez-white {
+	background-color: #fefefe;
+	font-size: 12px;
+}
+.ez-gray {
+	background-color: #e3e3e3;
+}
+.ez-dark-gray {
+	background-color: #42464b;
+	color: #FFFFFF;
+}
+.ez-titlemini-container {
+	margin: 0 0 55px 0;
+}
+.ez-titlemini {
+	padding: 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+.jumbotron h1,
+.ez-h1 {
+	font-size: 40px;
+	font-family: UbuntuMedium;
+}
+.ez-h2 {
+	font-size: 24px;
+	font-family: UbuntuMedium;
+}
+.ez-justify {
+	text-align: justify;
+}
+
+@media (max-width: 767px) { /* CSS for phone */
 	.jumbotron {
-		padding-right: 0px;
-		padding-left: 0px;
+		padding: 0px;
 	}
-	
-	.arrow-down-cleints {
-		margin-top: -40px;
+	.ez-h2 {		
+		margin-bottom: 30px;
 	}
-	.arrow-down-carousel-cases {
-		margin-top: -30px;
+	.ez-arrow-down {
+		margin-top: -25px;
+		zoom: 1;
+		position: relative;
 	}
-	
+	.ez-carousel-arrow-down {
+		margin-top: -45px;
+		margin-bottom: -15px;
+		zoom: 1;
+		position: relative;
+	}
 }
-@media (min-width: 768px) {
-	body {
-		margin-top: 75px;
-		color: #5a5a5a;
-		font-family: Ubuntu;
+@media (min-width: 768px) {/* CSS for tablet and desktop */
+	.ez-smallcontainer {
+		padding: 0 90px;
 	}
-	
-	.ez-content h1{
-		
-		padding-left: 90px;
-		padding-right: 90px;
+	.jumbotron {
+		padding: 10px;
 	}
-	
-	.ez-content h2{
-		
-		padding-left: 90px;
-		padding-right: 90px;
+	.jumbotron h1,
+	.ez-h1 {
+		padding: 0 30px;
+	}	
+	.ez-h2 {
+		padding: 0 30px;
+		margin-bottom: 65px;
 	}
-	.arrow-down-cleints {
-		margin-top: -10px;
+	.ez-arrow-down {
+		margin-top: -45px;		
+		zoom: 1;
+		position: relative;
 	}
-	.arrow-down-carousel-cases {
-		margin-bottom: -27px;	
+	.ez-carousel-arrow-down {
+		margin-top: -45px;
+		margin-bottom: -15px;
+		zoom: 1;
+		position: relative;
 	}
 }
 
-
-/* Navigation Bar */
+/* NAVIGATION */
 .navbar-wrapper {
 	position: absolute;
 	top: 0;
@@ -206,263 +166,334 @@
 	right: 0;
 	z-index: 20;
 }
+
 .navbar-wrapper .container {
-	padding-left: 0;
-	padding-right: 0;
 	font-weight: bolder;
+	
 }
-.navbar-wrapper .navbar {
-	padding-left: 15px;
-	padding-right: 15px;
+.navbar-fixed-top {		
+	background-color: #36393E;
 }
-@media (max-width: 767px) {
-	.ez-pull-left {
+.navbar-inverse {
+	border-color: #1ca8c3;
+}
+.navbar-inverse .navbar-nav > li > a {
+	font-family: UbuntuMedium;
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+	color: #1ca8c3;	
+}
+@media (max-width: 767px) { /* Navigation for phone */
+	.navbar-wrapper .container {
+		padding-left: 0;
+		padding-right: 0;
+		width: auto;
+	}
+	.navbar-wrapper .navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.brand-img {
+		margin-top: -7px;	
+	}
+	.ez-nav-left {
 		float: none;
 	}	
-	.ez-pull-right {
+	.ez-nav-right {
 		float: none ;
-	}	
-	.brand-img {
-		margin-top: -13px;	
-	}
+	}		
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Navigation for tablet and desktop */
 	.navbar-wrapper {
 		margin-top: 20px;
 	}
 	.navbar-wrapper .container {
 		padding-left:  15px;
 		padding-right: 15px;
+		width: 750px;
 	}
 	.navbar-wrapper .navbar {
 		padding-left:  0;
 		padding-right: 0;
+	}	
+	.navbar-inverse .navbar-nav > li > a {
+		height: 75px;
+		font-size: 18px;
+		padding-top: 40px;
 	}
-	.ez-pull-right {
+	.brand-img {
+		margin-top: 6px
+	}
+	.ez-nav-right {
 		float: right;
 	}	
-	.ez-pull-left {
+	.ez-nav-left {
 		float: left;
 	}
 }
-
-/* Carousel pertama */
-
-
-#ez-carousel-1 .carousel-caption > img {
-	margin-bottom: 30px;	
-}
-@media (max-width: 600px) {
-	#ez-carousel-1 {
-		height: 400px;
-	}
-	#ez-carousel-1 .item {
-		background-color: #e3e3e3;
-		height: 400px;
+@media (min-width: 992px) {
+	.navbar-wrapper .container {
+		padding-left:  15px;
+		padding-right: 15px;
+		width: 900px;
 	}
 }
-@media (min-width: 601px) {
-	#ez-carousel-1 {
-		height: 580px;
-	}
-	#ez-carousel-1 .item {
-		background-color: #e3e3e3;
-		height: 580px;
-	}
+
+/* FIRST SLIDER */
+.carousel-indicators li {
+	background-color: #FFFFFF;
 }
+.carousel-indicators .active {
+	background-color: #1ca8c3;
+	border-color: #1ca8c3;
+}
+.ez-img-responsive {  
+	max-width: 100%;
+	height: auto;
+}
+/* Slider for device phone and smaller */
 @media (max-width: 767px) {
-	
-	#ez-carousel-1 .carousel-caption p {
-	  margin-bottom: 20px;
-	  font-size: 18px;
-	  line-height: 1.4;
+	#ez-first .carousel-caption > img {
+		margin-bottom: 30px;
+		max-height: 240px;
+	}
+	#ez-first {
+		height: 400px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 400px;
+	}
+	#ez-first .carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 1.4;
 		padding: 2px 5px;
-	  background-color: rgba(51,150,160,0.8);
+		background-color: rgba(51,150,160,0.8);
 	}
 }
-
-@media (min-width: 768px) {
+@media (min-width:768px) {
+	#ez-first .carousel-caption > img {
+		margin-bottom: 30px;		
+	}
+	#ez-first {
+		height: 580px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 580px;
+	}
+}
+/* Slider for phone */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
 	
-	#ez-carousel-1 .carousel-caption p {
-	  margin-bottom: 20px;
-	  /*width: 630px;*/
-	  font-size: 21px;
-	  line-height: 1.4;
-	  padding: 10px 10px;
-	  background-color: rgba(51,150,160,0.8);
+}
+/* Slider for phone potrait */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+	#ez-first {
+		height: 400px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 400px;
+	}
+}
+/* Slider for phone landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+	#ez-first {
+		height: 320px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 320px;
+	}
+}
+/* Slider for tablet */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	#ez-first {
+		height: 580px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 580px;
+	}
+	#ez-first .carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 1.4;
+		padding: 2px 5px;
+		background-color: rgba(51,150,160,0.8);
+	}
+}
+/* Slider for tablet potrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+/* Slider for tablet landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	
+}
+/* Slider for desktop */
+@media (min-width: 992px) {
+	#ez-first {
+		height: 580px;
+	}
+	#ez-first .item {
+		background-color: #e3e3e3;
+		height: 580px;
+	}
+	#ez-first .carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 1.4;
+		padding: 10px 10px;
+		background-color: rgba(51,150,160,0.8);
 	}
 }
 
-/* Trusted by green */
-.ez-part-two-title {
-	margin: 10px 0 15px 0;
+
+/* LOGO #ez-two */
+#ez-two .ez-title {
+	margin: 2px 0 2px 0;
 }
-
-
-
-.ez-part-two-logo > div > img {
-	margin: 10px 0 10px 0;	
-}
-.ez-part-two-title h3 {
+#ez-two .ez-title h3 {
 	font-family: UbuntuMedium;
 	font-weight: bold;
 	font-size: 12pt;
 	line-height: 40px;
 	color: #36c9e5;
 	margin-top: 0px;
-	margin-bottom: 0px;
+}
+#ez-two .ez-logo > div > img {
+	margin: 10px 0;	
 }
 
-@media (max-width: 767px) {
-	.ez-part-two-logo {
+@media (max-width: 767px) { /* Logo for phone */
+	#ez-two .ez-logo {
 		margin: 0 0 37px 0;
 	}
 }
-
-@media (min-width: 768px) {
-	.ez-part-two-logo {
-		margin: 0 0 50px 0;
+@media (min-width: 768px) { /* Logo for tablet and desktop */
+	#ez-two .ez-logo {
+		margin: 0 0 25px 0;
 	}
 }
 
-/* About  */
-
-@media (max-width: 767px) {
-	.ez-part-three {
-		margin-bottom: 28px;
-	}
-}
-
-@media (min-width: 768px) {
-	.ez-part-three {
-		margin-bottom: 60px;
-	}
-}
-
-/* An unmatched data driven solutions */
-.ez-part-four > div {
+/* Solutions #ez-four*/
+#ez-four .item > div {
 	height: 90px;
 }
-@media (max-width: 767px) {
-	.ez-part-four {
-		margin-bottom: 15px;
-	}
-}
 
-@media (min-width: 768px) {
-	.ez-part-four {
-	}
-}
-
-/* Take it eezy */
-.ez-numbering .number {
-	font-size: 30px;
-	font-family: UbuntuBold;
-	color: #c7edf6;
-	line-height: 45px;
-	margin-left: -2px;
-}
-
-.number-back-white {
+/* Take it Eazy - Reason  #ez-five*/
+#ez-five .footer-line {
+	background-color: #1ca8c3;
+	height: 1px;
+	-webkit-box-shadow: 0 1px 0 0px #e1f6fb;
+	box-shadow: 0 1px 0 0px #e1f6fb;	
+} 
+#ez-five .number-back-white {
 	width: 75px;
 	background-color: #fefefe;
 	margin: -45px auto 0 auto;
 }
-.number-back-green {
-
+#ez-five .number-back-green {
 	background-image: url("../img/green-circle.png");
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 }
-
-
-
-
-@media (max-width: 767px) {
-	.ez-part-five {
-		margin: 0;	
-	}
-	.ez-five {
-		margin: 90px 0 0 0;
-		padding-right: 0px;
-		padding-left: 0px;
-	}
+#ez-five .number {
+	font-size: 30px;
+	font-family: UbuntuBold;
+	color: #c7edf6;
+	line-height: 45px;
+	margin-left: -2px;
 }
-@media (min-width: 768px) {
-	.ez-part-five {
-		margin: 0 0 100px 0;	
-	}
-	.ez-five {
-		margin: 90px 0 0 0;
-		
-	}
+#ez-five .ez-h3 {
+	font-family: UbuntuBold;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 40px;
 }
-
-/* Carousel kedua */
-span.ez-subtitle-co2 {	
-	font-size: 17px;
+#ez-five .ez-text-blue {
 	color: #1ca8c3;
 	font-family: UbuntuBold;
 }
-.ez-case {
-	float: left;
-	background-color: #a1a3a5;
-	padding: 2px 10px;
-	-webkit-border-radius: 4px 4px 4px 4px;
-	border-radius: 4px 4px 4px 4px;
+@media (max-width: 767px) {
+	#ez-five .ez-takeit > div {
+		margin-top: 70px;
+	}
+}
+@media (min-width: 768px) {
+	
+	#ez-five .item {
+		margin-top: 90px;
+	}
+}
+/* Tablet */
+@media (min-width:768px)
+and (max-width: 991px) {
+	#ez-five .ez-takeit > div {
+		max-height: 485px;
+		min-height: 325px;
+	}	
 }
 
 
-@media only screen 
-and (min-width : 300px) 
-and (max-width: 767px) {
-	#ez-carousel-2 {
-		height: 1675px;
-		/*height: 1280px;*/
-	}
-	.carousel-control-2 {
-		display: none;
-	}
-	.line-1 {
-		display: none;
-	}
-	#ez-carousel-2 .item {
-		background-color: #42464b;
-		color: #FFF;
-		height: 1675px;
-		padding-top: 175px;
-		padding-bottom: 60px;
-	}
+/* BENEFITS #ez-six */
+#ez-six > .row,
+#ez-seven > .row {
+	margin: 0px;
+}
+#ez-six .carousel-indicators {
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	z-index: 15;
+	width: 61%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+	height: 25px;
+}
+#ez-six .carousel-indicators .active {
+	background-color: #FFF;
+	border-color: #FFF;
+	color: #1ca8c3;
+	height: 25px;
+}
 
-	.carousel-indicators-2 {
-		position: absolute;
-		top: 95px;
-		left: 50%;
-		z-index: 15;
-		width: 61%;
-		padding-left: 0;
-		margin-left: -30%;
-		text-align: center;
-		list-style: none;
-		height: 25px;
+/* Slider for device phone and smaller */
+@media (max-width: 767px){
+	#ez-six,
+	#ez-six .item {
+		height: 1065px;
 	}
-	
-	.carousel-indicators-2 .active {
-		background-color: #FFF;
-		border-color: #FFF;
-		color: #1ca8c3;
-		width: 100%;
-		height: auto;
-		
-	}
-
-	.carousel-indicators-2 li {
+	#ez-six .carousel-indicators > li {
 		display: inline-block;
 		width: 100%;
-		padding: 0 5px 2px 5px;
-		
+		padding: 0 5px 2px 5px;	
 		background-color: #a1a3a5;
 		cursor: pointer;
 		text-indent: 0px;
@@ -470,44 +501,84 @@ and (max-width: 767px) {
 		border: 1px solid #a1a3a5;
 		border-radius: 7px;
 	}
-	
-	.ez-case-item {
-		font-weight: bold;
-		float: left;
-		
-		
-		display: block;
+	#ez-six .carousel-inner {
+		margin-top: 100px;
+	}
+	#ez-six .carousel-indicators .active {
+		width: 100%;
+	}
+	.line-1 {
+		display: none;
 	}
 }
-@media (min-width: 768px) {
-	#ez-carousel-2 {
-		height: 1060px;
+@media (max-width: 767px)
+and (orientation: potrait) {
+	#ez-six,
+	#ez-six .item {
+		height: 1065px;
 	}
 	.carousel-control-2 {
-		margin: 530px 0 0 0;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 15%;
-		font-size: 20px;
-		height: 45px;
-		color: #FFF;
-		text-align: center;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-		filter: alpha(opacity=50);
-		opacity: .5;
+		display: none;
 	}
-	
-	.carousel-control-2.left {
-		left: 0;
-		right: auto;
+	#ez-six .carousel-indicators .active {
+		width: auto;
+	}	
+}
+@media (max-width: 767px)
+and (orientation: landscape) {
+	#ez-six,
+	#ez-six .item {
+		height: 1050px;
 	}
-	
-	.carousel-control-2.right {
-		right: 0;
-		left: auto;
-		
+}
+/* Slider for phone */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	#ez-six .carousel-indicators .active {
+		width: 100%;
+	}
+}
+
+/* Slider for phone potrait */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+	#ez-six,
+	#ez-six .item {
+		height: 1065px;
+	}
+}
+/* Slider for phone landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+	#ez-six,
+	#ez-six .item {
+		height: 900px;
+	}
+}
+/* Slider for tablet */
+@media (min-width: 768px)
+and (max-width:991px) {
+	#ez-six .carousel-indicators > li {
+		display: inline-block;
+		width: auto;
+		padding: 0 5px 2px 5px;	
+		background-color: #a1a3a5;
+		cursor: pointer;
+		text-indent: 0px;
+		height: auto;
+		border: 1px solid #a1a3a5;
+		border-radius: 7px;
+	}
+	#ez-six .carousel-inner {
+		margin-top: 100px;
+	}
+	#ez-six .carousel-indicators .active {
+		width: auto;
 	}
 	.line-1 {
 		position: absolute;
@@ -517,322 +588,203 @@ and (max-width: 767px) {
 		top: -7px;
 		border-color: #A1A3A5;
 	}
-	.ez-co-justify:nth-child(odd) {
-		padding-left: 105px;
-		padding-right: 20px;
-	}
-	
-	
-	.ez-co-justify:nth-child(even) {
-		padding-right: 105px;
-		padding-left: 20px;
-	}
-	.ez-case-item {
-		font-weight: bold;
-		float: left;
-		
-		margin-left: 10px;
-		display: block;
-	}
 }
-@media (max-width: 991px) {
-	#ez-carousel-2 > .item > .container {
-		padding-right: 100px;
-		padding-left: 100px;
-	}
-}
-@media (min-width:768px) and (max-width:1199px) {
-	
-	#ez-carousel-2 .item {
-		background-color: #42464b;
-		color: #FFF;
-		height: 1060px;
-		padding-top: 75px;
-	}
-
-	.carousel-indicators-2 {
-		position: absolute;
-		top: 95px;
-		left: 50%;
-		z-index: 15;
-		width: 61%;
-		padding-left: 0;
-		margin-left: -30%;
-		text-align: center;
-		list-style: none;
-		height: 25px;
-	}
-	
-	.carousel-indicators-2 .active {
-		background-color: #FFF;
-		border-color: #FFF;
-		color: #1ca8c3;
-		width: auto;
-		height: auto;
-		
-	}
-
-	.carousel-indicators-2 li {
-		display: inline-block;
-		width: auto;
-		padding: 0 5px 2px 5px;
-		
-		background-color: #a1a3a5;
-		cursor: pointer;
-		text-indent: 0px;
-		height: auto;
-		border: 1px solid #a1a3a5;
-		border-radius: 7px;
-	}
-}
-@media (min-width: 1200px) {
-	
-	#ez-carousel-2 .item {
-		background-color: #42464b;
-		color: #FFF;
-		height: 1060px;
-		padding-top: 75px;
-	}
-
-	.carousel-indicators-2 {
-		position: absolute;
-		top: 95px;
-		left: 50%;
-		z-index: 15;
-		width: 61%;
-		padding-left: 0;
-		margin-left: -30%;
-		text-align: center;
-		list-style: none;
-		height: 25px;
-	}
-	
-	.carousel-indicators-2 .active {
-		background-color: #FFF;
-		border-color: #FFF;
-		color: #1ca8c3;
-		width: auto;
-		height: auto;
-		margin: 0 50px;
-	}
-
-	.carousel-indicators-2 li {
-		display: inline-block;
-		width: auto;
-		padding: 0 5px 2px 5px;
-		margin: 0 50px;
-		background-color: #a1a3a5;
-		cursor: pointer;
-		text-indent: 0px;
-		height: auto;
-		border: 1px solid #a1a3a5;
-		border-radius: 7px;
-	}
-}
-
-/* Caraousel ketigax */
-
-.ez-title-co3 {
-	color: #1ca8c3;
-	font-size: 36px;
-}
-
-/* Smartphones (landscape) ----------- */
 @media only screen 
-and (min-width : 300px) and (max-width: 767px) {
-/* Styles */
-	#ez-carousel-3 {
-		height: 1155px;
-	}
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
 	
-	#ez-carousel-3 .item {
-		background-color: #e3e3e3;
-		height: 1155px;
-		padding-bottom: 60px;
-		
-	}
-	.carousel-control-3{
-		display: none;
-	}
+}
+/* Slider for tablet potrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
 	
-	.ez-co3-justify {
-		padding: 0 25px;
-	}
-	#ez-arr-cor-3 {
-		padding-right: 0px;
-		height: 0px;
-	}
-}/*
-@media (max-width: 767px) {
-	#ez-carousel-3 {
-		height: 1655px;
-	}
+}
+/* Slider for tablet landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
 	
-	#ez-carousel-3 .item {
-		background-color: #e3e3e3;
-		height: 1655px;
-		padding-bottom: 60px;
-		
+}
+/* Slider for desktop */
+@media (min-width: 992px) {
+	#ez-six,
+	#ez-six .item {
+		height: 1065px;
 	}
-	.carousel-control-3{
-		display: none;
-	}
-	
-	.ez-co3-justify {
-		padding: 0 25px;
-	}
-	#ez-arr-cor-3 {
-		padding-right: 0px;
-		height: 0px;
-	}
-}*/
-@media (min-width: 768px) {
-	#ez-carousel-3 {
-		height: 1390px;
-	}
-	
-	#ez-carousel-3 .item {
-		background-color: #e3e3e3;
-		height: 1390px;
-	}
-	.carousel-control-3 {
-		margin: 290px 0 0 0;
+	.carousel-control-2 {
 		position: absolute;
-		top: 0;
-		bottom: 0;
+		top: 370px;	
 		left: 0;
-		width: 15%;
-		font-size: 20px;
-		color: #FFF;
+		width: 15%;	
+		color: #fff;
 		text-align: center;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 		filter: alpha(opacity=50);
 		opacity: .5;
-		height: 45px;
 	}
-	
-	.carousel-control-3.right {
+	.carousel-control-2.left {
+	  
+	}
+	.carousel-control-2.right {
 		right: 0;
-		left: auto;
-		
+		left: auto;  
+	}
+	#ez-six .carousel-inner {
+		margin-top: 100px;
+	}
+	#ez-six .carousel-indicators > li {
+		display: inline-block;
+		width: auto;
+		padding: 0 5px 2px 5px;
+		margin: 0 5%;
+		background-color: #a1a3a5;
+		cursor: pointer;
+		text-indent: 0px;
+		height: auto;
+		border: 1px solid #a1a3a5;
+		border-radius: 7px;
+	}
+	.line-1 {
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		z-index: -10;
+		top: -7px;
+		border-color: #A1A3A5;
 	}
 }
-@media (max-width: 991px) {
-	#ez-carousel-3 > .item > .container {
-		padding-right: 100px;
-		padding-left: 100px;
+
+/* CASES #ez-seven */
+.ez-cases h1 {
+	color: #1ca8c3;
+	margin-bottom: 40px;
+}
+.ez-cases h3 {
+	color: #1ca8c3;
+	font-family: UbuntuBold;	
+	font-size: 17px;
+	margin: 0px;
+}
+.ez-cases p {
+	text-align: justify;
+	margin-bottom: 30px;
+}
+#ez-seven .ez-text-blue {
+	color: #1ca8c3;
+	font-family: UbuntuBold;
+}
+
+/* Slider for phone */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 800px) {
+	#ez-seven,
+	#ez-seven .item {
+		height: 1900px;
+	}
+}
+/* Slider for phone potrait */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 800px) 
+and (orientation : portrait) {
+	#ez-seven,
+	#ez-seven .item {
+		height: 1900px;
+	}
+}
+/* Slider for phone landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 800px)  
+and (orientation : landscape) {
+	#ez-seven,
+	#ez-seven .item {
+		height: 1900px;
+	}
+}
+/* Slider for tablet */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	
+	#ez-seven,
+	#ez-seven .item {
+		height: 1300px;
+	}
+}
+/* Slider for tablet potrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.carousel-control-2 {
+		display: none;
+	}
+	#ez-seven,
+	#ez-seven .item {
+		height: 1300px;
+	}
+}
+/* Slider for tablet landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	#ez-seven,
+	#ez-seven .item {
+		height: 800px;
+	}
+}
+/* Slider for desktop */
+@media (min-width: 992px) {
+	#ez-seven,
+	#ez-seven .item {
+		height: 1390px;
 	}
 }
 
-/* We are happy to work for */
-
-
-.ez-mitra div.text-center {
-	height: 75px;
-	padding-top: auto;
-	padding-bottom: auto;
+/* CLIENTS #ez-eight */
+#ez-eight .ez-content > .ez-mitra {
+	
 }
 @media (max-width: 767px) {
-	.ez-mitra {
-		margin-top: 75px;
-		margin-bottom: 20px;	
+	#ez-eight .ez-h1 {		
+		margin-bottom: 30px;
 	}
 }
-
-@media (min-width: 768px) {
-	.ez-mitra {
-		margin-top: 75px;
-		margin-bottom: 113px;	
-	}
-	
-	#deltallyod,
-	#trimbos {
+@media (min-width: 768px) {/* CSS for tablet and desktop */	
+	#ez-eight .ez-h1 {
+		padding: 0 30px;
+		margin-bottom: 65px;
+	}	
+	#ez-eight #deltallyod,
+	#ez-eight #trimbos {
 		margin-top: 17px;
 	}
 }
 
-/* Contact */
-.ez-footer {
-	margin-top: -10px;
-	
-}
-
-.ez-footer p {
-	margin-top: 15px;
-	font-family: Ubuntu;
-	font-size: 16px;
-}
-
-.ez-footer img {
-	
-}
-
-.ez-footer > div {
-	margin-bottom: 40px;
-}
-.footer-line {
+/* CONTACT #ez-nine*/
+#ez-nine .footer-line {
 	background-color: #1ca8c3;
 	height: 1px;
 	-webkit-box-shadow: 0 1px 0 0px #e1f6fb;
-	box-shadow: 0 1px 0 0px #e1f6fb;
-	
+	box-shadow: 0 1px 0 0px #e1f6fb;	
 } 
-
-.footer-img-latar {
-	
+#ez-nine .footer-back-gray {
 	width: 68px;
 	margin: -45px auto 0 auto;
 	background-color: #E3E3E3;
 }
-@media (max-width: 767px) {
+
+#ez-nine p {
+	margin-top: 15px;	
 }
-
-@media (min-width: 768px) {
-}
-
-
-
-
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- 
-======================================================================================================*/
-
-
-/* Since positioning the image, we need to help out the caption */
-
-
-
-
-
-
-
-.ez-justify,
-.ez-co-justify,
-.ez-co1-justify,
-.ez-co3-justify {
-	text-align: justify;
-}
-
-
-@media (min-width: 991px) {
-	.ez-justify:nth-child(odd) {
-		padding-left: 90px;
-		padding-right: 20px;
-	}
-	
-	.ez-justify:nth-child(even) {
-		padding-right: 90px;
-		padding-left: 20px;
-	}
-	
-	
-	.ez-co3-justify {
-		padding: 0 130px;
+@media (max-width: 767px) {/* CSS for tablet and desktop */	
+	#ez-nine .ez-footer > div {
+		margin-bottom: 45px;
 	}
 }
-
-
-
-
