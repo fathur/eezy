@@ -462,7 +462,12 @@ and (max-width: 991px) {
 		min-height: 325px;
 	}	
 }
-
+@media (min-width:992px) {
+	#ez-five .ez-takeit > div {
+		max-height: 500px;
+		min-height: 330px;
+	}	
+}
 
 /* BENEFITS #ez-six */
 #ez-six > .row,

@@ -675,7 +675,7 @@
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!-- script src="js/jquery.touchSwipe.min.js"></script> -->
+	<script src="js/touchswipe.min.js"></script>
 	<script src="js/eezy.js"></script>
 	<script src="js/cc-5.1.min.js"></script>
 	<script type="text/javascript">
@@ -701,7 +701,7 @@
 			});
 		});
 		
-		/* $("#ez-first .carousel-inner").swipe( {
+		$("#ez-six .carousel-inner").swipe( {
 			//Generic swipe handler for all directions
 			swipeLeft:function(event, direction, distance, duration, fingerCount) {
 				$(this).parent().carousel('prev'); 
@@ -711,7 +711,19 @@
 			},
 			//Default is 75px, set to 0 for demo so any distance triggers swipe
 			threshold:0
-		}); */
+		});
+		
+		$("#ez-seven .carousel-inner").swipe( {
+			//Generic swipe handler for all directions
+			swipeLeft:function(event, direction, distance, duration, fingerCount) {
+				$(this).parent().carousel('prev'); 
+			},
+			swipeRight: function() {
+				$(this).parent().carousel('next'); 
+			},
+			//Default is 75px, set to 0 for demo so any distance triggers swipe
+			threshold:0
+		});
 	});
 	
 	$(window).load(function(){
