@@ -223,7 +223,7 @@
 	}	
 	.navbar-inverse .navbar-nav > li > a {
 		height: 75px;
-		font-size: 18px;
+		font-size: 16px;
 		padding-top: 40px;
 	}
 	.brand-img {
@@ -488,10 +488,10 @@ and (max-width: 991px) {
 
 /* Slider for device phone and smaller */
 @media (max-width: 767px){
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 1065px;
-	}
+	}*/
 	#ez-six .carousel-indicators > li {
 		display: inline-block;
 		width: 100%;
@@ -515,10 +515,10 @@ and (max-width: 991px) {
 }
 @media (max-width: 767px)
 and (orientation: potrait) {
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 1065px;
-	}
+	}*/
 	.carousel-control-2 {
 		display: none;
 	}
@@ -528,10 +528,10 @@ and (orientation: potrait) {
 }
 @media (max-width: 767px)
 and (orientation: landscape) {
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 1050px;
-	}
+	}*/
 }
 /* Slider for phone */
 @media only screen 
@@ -547,20 +547,20 @@ and (max-device-width : 568px) {
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
 and (orientation : portrait) {
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 1065px;
-	}
+	}*/
 }
 /* Slider for phone landscape */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
 and (orientation : landscape) {
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 900px;
-	}
+	}*/
 }
 /* Slider for tablet */
 @media (min-width: 768px)
@@ -612,10 +612,10 @@ and (orientation : landscape) {
 }
 /* Slider for desktop */
 @media (min-width: 992px) {
-	#ez-six,
+	/*#ez-six,
 	#ez-six .item {
 		height: 1065px;
-	}
+	}*/
 	.carousel-control-2 {
 		position: absolute;
 		top: 370px;	
@@ -680,43 +680,56 @@ and (orientation : landscape) {
 }
 
 /* Slider for phone */
+
+@media (max-width: 767px) {
+	/*#ez-seven,
+	#ez-seven .item {
+		height: 1300px;		
+	}*/
+}
+@media (max-width: 767px)
+and (orientation: potrait) {
+	/* #ez-seven,
+	#ez-seven .item {
+		height: 1300px;		
+	} */
+}
+@media (max-width: 767px)
+and (orientation: landscape) {
+	/* #ez-seven,
+	#ez-seven .item {
+		height: 1300px; /*Potrait
+		height: 1000px;
+	} */
+}
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 800px) {
-	#ez-seven,
-	#ez-seven .item {
-		height: 1900px;
-	}
+	
 }
 /* Slider for phone potrait */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 800px) 
 and (orientation : portrait) {
-	#ez-seven,
-	#ez-seven .item {
-		height: 1900px;
-	}
+	
 }
 /* Slider for phone landscape */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 800px)  
 and (orientation : landscape) {
-	#ez-seven,
-	#ez-seven .item {
-		height: 1900px;
-	}
+	
 }
 /* Slider for tablet */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 	
-	#ez-seven,
+	/*#ez-seven,
 	#ez-seven .item {
 		height: 1300px;
-	}
+	}*/
 }
 /* Slider for tablet potrait */
 @media only screen 
@@ -725,28 +738,24 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 	.carousel-control-2 {
 		display: none;
-	}
-	#ez-seven,
-	#ez-seven .item {
-		height: 1300px;
-	}
+	}	
 }
 /* Slider for tablet landscape */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-	#ez-seven,
+	/*#ez-seven,
 	#ez-seven .item {
 		height: 800px;
-	}
+	}*/
 }
 /* Slider for desktop */
 @media (min-width: 992px) {
-	#ez-seven,
+	/* #ez-seven,
 	#ez-seven .item {
 		height: 1390px;
-	}
+	} */
 }
 
 /* CLIENTS #ez-eight */

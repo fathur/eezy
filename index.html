@@ -671,7 +671,7 @@
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.touchSwipe.min.js"></script>
+	<!-- script src="js/jquery.touchSwipe.min.js"></script> -->
 	<script src="js/eezy.js"></script>
 	<script type="text/javascript">
 	
@@ -696,7 +696,7 @@
 			});
 		});
 		
-		$("#ez-first .carousel-inner").swipe( {
+		/* $("#ez-first .carousel-inner").swipe( {
 			//Generic swipe handler for all directions
 			swipeLeft:function(event, direction, distance, duration, fingerCount) {
 				$(this).parent().carousel('prev'); 
@@ -706,11 +706,16 @@
 			},
 			//Default is 75px, set to 0 for demo so any distance triggers swipe
 			threshold:0
-		});
+		}); */
+		
+		carouselNormalization();
+		carouselNormalizationSeven();
 	});
 	
+	
+	
 	//<![CDATA[
-    cookieControl({
+   cookieControl({
         introText:'This site uses some unobtrusive cookies to store information on your computer.',
         fullText:'<p>Some cookies on this site are essential, and the site won\'t work as expected without them. These cookies are set when you submit a form, login or interact with the site by doing something that goes beyond clicking on simple links.</p><p>We also use some non-essential cookies to anonymously track visitors or enhance your experience of the site. If you\'re not happy with this, we won\'t set these cookies but some nice features of the site may be unavailable.</p><p>To control third party cookies, you can also adjust your <a href="http://www.civicuk.com/cookie-law/browser-settings" target="_blank">browser settings</a>.</p><p>By using our site you accept the terms of our <a href="http://eezy.nl/sites/default/files/privacy_statement.pdf">Privacy Policy</a>.</p>',
         position:'left', // left or right
@@ -726,8 +731,8 @@
         onCookiesAllowed:function(){},
         onCookiesNotAllowed:function(){},
         countries:'United Kingdom,Netherlands' // Or supply a list ['United Kingdom', 'Greece']
-        });
-     //]]>
+    });
+     //]]> 
 	</script>
 </body>
 </html>
