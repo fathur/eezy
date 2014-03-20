@@ -77,7 +77,7 @@ function normalizeHeights(items,heights,tallest) {
 	});
 	tallest = Math.max.apply(null, heights);
 	items.each(function(){
-		$(this).css('height', tallest + 30 + 'px');
+		$(this).css('height', tallest + 60 + 'px');
 	});
 }
 
