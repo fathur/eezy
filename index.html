@@ -697,9 +697,25 @@
 			$('#ez-first.carousel').css({
 				'width': $(window).outerWidth()
 			});
-		});		
+
+		});
 		
-	});	
+		function genSwipeObj() {
+			return  {
+				swipeLeft:function(event, direction, distance, duration, fingerCount) {
+					$(this).parent().carousel('next');
+				},
+				swipeRight: function() {
+					$(this).parent().carousel('prev'); 
+				},
+				threshold:0
+			}
+		}
+		$("#ez-first .carousel-inner").swipe(genSwipeObj());
+		$("#ez-six .carousel-inner").swipe(genSwipeObj());
+		$("#ez-seven .carousel-inner").swipe(genSwipeObj());
+	});
+	
 	$(window).load(function(){
 		carouselNormalization('#ez-six');
 		carouselNormalization('#ez-seven');
