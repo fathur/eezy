@@ -32,12 +32,12 @@ $(".navbar-brand[href^='#']").on('click', function(e) {
 
 function normalizeHeights(items,heights,tallest) {
 	items.each(function(){
-		heights.push($(this).height());
+		heights.push($(this).height());		
 	});
 	tallest = Math.max.apply(null, heights);
-			
+	
 	items.each(function(){
-		$(this).css('height', tallest + 'px');
+		$(this).css('height', tallest + 60 + 'px');
 	});
 }
 
@@ -74,31 +74,4 @@ function carouselNormalization(id) {
 			normalizeHeights(); //run it again 
 		});
 	}*/
-}
-
-function carouselNormalizationSeven() {
-	var itemsSeven = $('#ez-seven .item'), //grab all slides
-		heightsSeven = [], //create empty array to store height values
-		tallestSeven; //create variable to make note of the tallest slide
-
-	if (itemsSeven.length) {
-		function normalizeHeightsSeven() {
-			itemsSeven.each(function() { //add heights to array
-				heightsSeven.push($(this).height()); 
-			});
-			tallestSeven = Math.max.apply(null, heightsSeven); //cache largest value
-			itemsSeven.each(function() {
-				$(this).css('min-height',tallestSeven + 'px');
-			});
-		};
-		normalizeHeightsSeven();
-
-		$(window).on('resize orientationchange', function () {
-			tallestSeven = 0, heightsSeven.length = 0; //reset vars
-			itemsSeven.each(function() {
-				$(this).css('min-height','0'); //reset min-height
-			}); 
-			normalizeHeightsSeven(); //run it again 
-		});
-	}
 }
