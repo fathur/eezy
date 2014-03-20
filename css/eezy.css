@@ -29,8 +29,7 @@
 	}	
 	.container {
 		width: 750px;
-	}
-	
+	}	
 }
 @media (min-width: 768px) {/* CSS for tablet and desktop */
 	body {
@@ -87,6 +86,9 @@
 }
 .ez-gray {
 	background-color: #e3e3e3;
+}
+.ez-semi-gray {
+	background-color: #a1a3a5;
 }
 .ez-dark-gray {
 	background-color: #42464b;
@@ -485,7 +487,16 @@ and (max-width: 991px) {
 	color: #1ca8c3;
 	height: 25px;
 }
-
+#ez-six h3 {
+	color: #1ca8c3;
+	font-family: UbuntuBold;
+	font-size: 17px;
+	margin: 0px;
+}
+#ez-six p {
+	text-align: justify;
+	margin-bottom: 30px;
+}
 /* Slider for device phone and smaller */
 @media (max-width: 767px){
 	#ez-six .carousel-indicators > li {

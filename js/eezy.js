@@ -30,8 +30,27 @@ $(".navbar-brand[href^='#']").on('click', function(e) {
 	$(this).parent().addClass('active');
 });
 
-function carouselNormalization() {
-	var items = $('#ez-six .item'), //grab all slides
+function normalizeHeights(items,heights,tallest) {
+	items.each(function(){
+		heights.push($(this).height());
+	});
+	tallest = Math.max.apply(null, heights);
+			
+	items.each(function(){
+		$(this).css('height', tallest + 'px');
+	});
+}
+
+function carouselNormalization(id) {
+	var items 	= $(id+' .item');
+	var heights	= [];
+	var tallest;
+	
+	if (items.length) {
+		normalizeHeights(items,heights,tallest);
+	}
+		
+	/*var items = $('#ez-six .item'), //grab all slides
 		heights = [], //create empty array to store height values
 		tallest; //create variable to make note of the tallest slide
 
@@ -54,7 +73,7 @@ function carouselNormalization() {
 			}); 
 			normalizeHeights(); //run it again 
 		});
-	}
+	}*/
 }
 
 function carouselNormalizationSeven() {
