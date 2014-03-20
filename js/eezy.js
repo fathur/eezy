@@ -35,9 +35,9 @@ function normalizeHeights(items,heights,tallest) {
 		heights.push($(this).height());		
 	});
 	tallest = Math.max.apply(null, heights);
-	
+	console.log(tallest);
 	items.each(function(){
-		$(this).css('height', tallest + 60 + 'px');
+		$(this).css('height', tallest + 30 + 'px');
 	});
 }
 
