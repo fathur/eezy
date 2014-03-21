@@ -506,7 +506,7 @@ and (max-width: 991px) {
 @media (max-width: 767px){
 	#ez-six,
 	#ez-six .item {
-		height: 1556px;
+		height: 1600px;
 	}
 	#ez-six .carousel-indicators > li {
 		display: inline-block;
