@@ -504,6 +504,10 @@ and (max-width: 991px) {
 }
 /* Slider for device phone and smaller */
 @media (max-width: 767px){
+	#ez-six,
+	#ez-six .item {
+		height: 1556px;
+	}
 	#ez-six .carousel-indicators > li {
 		display: inline-block;
 		width: 100%;
