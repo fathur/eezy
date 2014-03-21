@@ -28,37 +28,6 @@ $(".navbar-brand[href^='#']").on('click', function(e) {
 	$('.nav li').removeClass('active');
 	$(this).parent().addClass('active');
 });
-$("#ez-first .carousel-inner").swipe( {
-	swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		$(this).parent().carousel('next'); 
-	},
-	swipeRight: function() {
-		$(this).parent().carousel('prev'); 
-	},
-	threshold:0
-});		
-$("#ez-six .carousel-inner").swipe( {
-	//Generic swipe handler for all directions
-	swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		$(this).parent().carousel('next'); 
-	},
-	swipeRight: function() {
-		$(this).parent().carousel('prev'); 
-	},
-	//Default is 75px, set to 0 for demo so any distance triggers swipe
-	threshold:0
-});		
-$("#ez-seven .carousel-inner").swipe( {
-	//Generic swipe handler for all directions
-	swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		$(this).parent().carousel('next'); 
-	},
-	swipeRight: function() {
-		$(this).parent().carousel('prev'); 
-	},
-	//Default is 75px, set to 0 for demo so any distance triggers swipe
-	threshold:0
-});
 
 function detectmob() { 
 	if( navigator.userAgent.match(/Android/i)
@@ -91,6 +60,10 @@ function normalizeHeights(items,heights,tallest) {
 		heights.push($(this).height());		
 	});
 	tallest = Math.max.apply(null, heights);
+	
+	console.log(heights);
+	console.log(tallest);
+	
 	items.each(function(){
 		$(this).css('height', tallest + 60 + 'px');
 	});
