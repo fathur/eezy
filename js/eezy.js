@@ -55,9 +55,33 @@ function genSwipeObj() {
 	}
 }
 
+var getIOSWindowHeight = function() {
+    // Get zoom level of mobile Safari
+    // Note, that such zoom detection might not work correctly in other browsers
+    // We use width, instead of height, because there are no vertical toolbars :)
+    var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
+
+    // window.innerHeight returns height of the visible area. 
+    // We multiply it by zoom and get out real height.
+    return window.innerHeight * zoomLevel;
+};
+
+// You can also get height of the toolbars that are currently displayed
+var getHeightOfIOSToolbars = function() {
+    var tH = (window.orientation === 0 ? screen.height : screen.width) -  getIOSWindowHeight();
+    return tH > 1 ? tH : 0;
+};
+
 function normalizeHeights(items,heights,tallest) {
 	items.each(function(){
-		heights.push($(this).height());		
+		var height;
+		if (iOS) {
+			height = 1900;
+		}
+		else {
+			height = $(this).height()
+		}
+		heights.push(height);		
 	});
 	tallest = Math.max.apply(null, heights);
 	
