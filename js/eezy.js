@@ -76,7 +76,7 @@ function normalizeHeights(items,heights,tallest) {
 	items.each(function(){
 		var height;
 		if (iOS) {
-			height = getIOSWindowHeight();
+			height = $(this).height();
 		}
 		else {
 			height = $(this).height();
