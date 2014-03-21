@@ -76,10 +76,10 @@ function normalizeHeights(items,heights,tallest) {
 	items.each(function(){
 		var height;
 		if (iOS) {
-			height = 1900;
+			height = getIOSWindowHeight();
 		}
 		else {
-			height = $(this).height()
+			height = $(this).height();
 		}
 		heights.push(height);		
 	});
