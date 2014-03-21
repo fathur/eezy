@@ -697,12 +697,15 @@
 			$('#ez-first.carousel').css({
 				'width': $(window).outerWidth()
 			});
-
 		});
 				
-		$("#ez-first .carousel-inner").swipe(genSwipeObj());
-		$("#ez-six .carousel-inner").swipe(genSwipeObj());
-		$("#ez-seven .carousel-inner").swipe(genSwipeObj());
+		// Detect if mobile
+		if(detectmob() == true) {
+			
+			$("#ez-first .carousel-inner").swipe(genSwipeObj());
+			$("#ez-six .carousel-inner").swipe(genSwipeObj());
+			$("#ez-seven .carousel-inner").swipe(genSwipeObj());
+		}
 	});
 	
 	$(window).load(function(){

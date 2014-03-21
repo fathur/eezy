@@ -60,6 +60,20 @@ $("#ez-seven .carousel-inner").swipe( {
 	threshold:0
 });
 
+function detectmob() { 
+	if( navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/webOS/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 function genSwipeObj() {
 	return  {
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
@@ -71,6 +85,7 @@ function genSwipeObj() {
 		threshold:0
 	}
 }
+
 function normalizeHeights(items,heights,tallest) {
 	items.each(function(){
 		heights.push($(this).height());		
