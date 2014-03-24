@@ -683,31 +683,8 @@
 	<script type="text/javascript">
 	
 	jQuery(document).ready(function() {
-		$('#ez-first.carousel').css({
-			'margin': 0, 
-			'width': $(window).outerWidth()
-		});		
-		$('#ez-first .carousel-inner div.item > img').each(function() {
-			var imgSrc = $(this).attr('src');		
-			$(this).parent().css({
-				'background': 'url('+imgSrc+') center center no-repeat', 
-				'background-size': 'cover'
-			});			
-			$(this).remove();
-		});			
-		$(window).on('resize', function() {
-			$('#ez-first.carousel').css({
-				'width': $(window).outerWidth()
-			});
-		});
-				
-		// Detect if mobile
-		if(detectmob() == true) {
 			
-			$("#ez-first .carousel-inner").swipe(genSwipeObj());
-			$("#ez-six .carousel-inner").swipe(genSwipeObj());
-			$("#ez-seven .carousel-inner").swipe(genSwipeObj());
-		}
+		
 	});
 	
 	$(window).load(function(){
@@ -717,6 +694,65 @@
 		
 		carouselNormalization('#ez-seven');
 	});	
+	
+	$(window).on('resize', function() {
+		$('#ez-first.carousel').css({
+			'width': $(window).outerWidth()
+		});
+	});
+			
+	// Detect if mobile
+	if(detectmob() == true) {		
+		$("#ez-first .carousel-inner").swipe(genSwipeObj());
+		$("#ez-six .carousel-inner").swipe(genSwipeObj());
+		$("#ez-seven .carousel-inner").swipe(genSwipeObj());
+	}
+	
+	$('#ez-first.carousel').css({
+		'margin': 0, 
+		'width': $(window).outerWidth()
+	});		
+	$('#ez-first .carousel-inner div.item > img').each(function() {
+		var imgSrc = $(this).attr('src');		
+		$(this).parent().css({
+			'background': 'url('+imgSrc+') center center no-repeat', 
+			'background-size': 'cover'
+		});			
+		$(this).remove();
+	});		
+	
+	$(".nav li a[href^='#']").on('click', function(e) {
+		// prevent default anchor click behavior
+		e.preventDefault();
+		// store hash
+		var hash = this.hash;
+		var offset = $(this.hash).offset().top;	
+		if($(window).width() < 767) {
+			offset -= 58;
+		} else {
+			offset -= 76;
+		}	
+		$('html, body').animate({
+			scrollTop: offset
+		}, 1000);
+		$('.nav li').removeClass('active');
+		$(this).parent().addClass('active');
+	});
+	
+	$(".navbar-brand[href^='#']").on('click', function(e) {
+		// prevent default anchor click behavior
+		e.preventDefault();
+		// store hash
+		var hash = this.hash;
+		var offset = $(this.hash).offset().top;
+		// animate
+		$('html, body').animate({
+			scrollTop: offset-100
+		}, 1000);
+		$('.nav li').removeClass('active');
+		$(this).parent().addClass('active');
+	});
+	
 	//<![CDATA[
 	cookieControl({
 		introText:'This site uses some unobtrusive cookies to store information on your computer.',
